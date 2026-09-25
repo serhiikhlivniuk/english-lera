@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en" data-base="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="assets/app.css?v=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230E8F7E'/><text x='50' y='68' font-size='52' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'>EN</text></svg>">
+<title>Home · Lera's English</title>
+</head>
+<body>
+<main class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">Your space for English</p>
+    <h1>Everything you need, in one place</h1>
+    <p class="lede">Lessons, words, grammar, homework and the link to our class. Open it any time — nothing here disappears.</p>
+  </div>
+
+  <section class="hero" id="meet">
+    <h2>Next lesson</h2>
+    <p id="next-line">loading…</p>
+    <div class="meet-rows" id="meet-rows"></div>
+    <a class="btn btn-light" id="meet-link" href="#" target="_blank" rel="noopener">▶ Join on Google Meet</a>
+  </section>
+
+  <section class="section"><div class="stats" id="stats"></div></section>
+
+  <section class="section grid g2">
+    <div class="card" id="hw-card"></div>
+    <div class="card" id="lesson-card"></div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>Sections</h2></div>
+    <div class="grid g3" id="sections"></div>
+  </section>
+</main>
+<script src="assets/store.js?v=1"></script>
+<script src="assets/app.js?v=1"></script>
+<script src="assets/wordgrab.js?v=1"></script>
+<script>
+(async () => {
+  const [cfg, lessons, vocab, hw] = await Promise.all([
+    EW.config(), EW.data('lessons'), EW.data('vocabulary'), EW.data('homework')
+  ]);
+  await EW.hydrate();
+
+  document.getElementById('meet-link').href = cfg.meet.url;
+  document.getElementById('meet-rows').innerHTML = cfg.meet.schedule.map(s =>
+    `<div class="meet-row">${esc(s.day)}<b>${esc(s.time)}</b>${s.duration} min</div>`).join('');
+  const nxt = EW.nextLesson(cfg.meet);
+  document.getElementById('next-line').textContent = nxt
+    ? `${nxt.slot.day}, ${nxt.slot.time} — ${EW.humanUntil(nxt.date)} · ${cfg.meet.note}`
+    : cfg.meet.note;
+
+  const known = EW.get('vocab:known', []);
+  const done = EW.get('hw:done', {});
+  const allItems = hw.flatMap(h => h.items.map(i => i.id));
+  const doneCount = allItems.filter(id => done[id]).length;
+  const pct = allItems.length ? Math.round(doneCount / allItems.length * 100) : 0;
+  const kpct = vocab.length ? Math.round(known.length / vocab.length * 100) : 0;
+  document.getElementById('stats').innerHTML = `
+    <div class="stat"><div class="n">${lessons.length}</div><div class="l">lessons done</div></div>
+    <div class="stat"><div class="n">${vocab.length}</div><div class="l">words in the list</div></div>
+    <div class="stat"><div class="n">${known.length}</div><div class="l">words you know</div>
+      <div class="bar lime" style="margin-top:10px"><i style="width:${kpct}%"></i></div></div>
+    <div class="stat"><div class="n">${pct}%</div><div class="l">homework done</div>
+      <div class="bar" style="margin-top:10px"><i style="width:${pct}%"></i></div></div>`;
+
+  const cur = hw[0];
+  const curDone = cur.items.filter(i => done[i.id]).length;
+  document.getElementById('hw-card').innerHTML = `
+    <span class="tag t-pink">Homework</span>
+    <h2 style="margin-top:12px">${esc(cur.title)}</h2>
+    <p class="muted">Due ${fmtDate(cur.due)} · ${curDone} of ${cur.items.length} done</p>
+    <div class="bar" style="margin:14px 0 18px"><i style="width:${Math.round(curDone / cur.items.length * 100)}%"></i></div>
+    <a class="btn btn-accent btn-sm" href="homework.html">Open homework</a>`;
+
+  const last = [...lessons].sort((a, b) => b.number - a.number)[0];
+  document.getElementById('lesson-card').innerHTML = `
+    <span class="tag t-violet">Latest lesson</span>
+    <h2 style="margin-top:12px">Lesson ${last.number} — ${esc(last.title)}</h2>
+    <p class="muted">${fmtDate(last.date)} · ${esc(last.level)} · ${esc(last.duration)}</p>
+    <p style="margin:10px 0 16px">${esc(last.summary)}</p>
+    <a class="btn btn-accent btn-sm" href="${last.file ? esc(last.file) : 'lessons.html'}">Review the lesson</a>`;
+
+  const S = [
+    ['lessons.html', '📘', 'Lessons', 'Every lesson we have done — open and review any time.'],
+    ['vocabulary.html', '🔤', 'Vocabulary', 'Words from each lesson, plus flashcards and a quiz.'],
+    ['grammar.html', '🧩', 'Grammar', 'Rules by topic, with examples and common mistakes.'],
+    ['links.html', '🔗', 'Links', 'Videos, sites and dictionaries for working on your own.'],
+    ['homework.html', '✅', 'Homework', 'What you need to do before the next lesson.'],
+    ['#meet', '🎥', 'Google Meet', 'The permanent class link and our timetable.']
+  ];
+  document.getElementById('sections').innerHTML = S.map(([h, e, t, d]) =>
+    `<a class="card" href="${h}"><div style="font-size:26px">${e}</div>
+      <h3 style="margin-top:8px">${t}</h3><p class="muted" style="margin:0">${d}</p></a>`).join('');
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en" data-base="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="assets/app.css?v=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230E8F7E'/><text x='50' y='68' font-size='52' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'>EN</text></svg>">
+<title>Grammar · Lera's English</title>
+</head>
+<body>
+<main class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">Grammar</p>
+    <h1>The rules we need</h1>
+    <p class="lede">Every topic gives you the form, when to use it, examples and the mistakes people usually make. At the bottom of each topic there is a three-question quiz.</p>
+  </div>
+  <div class="toolbar">
+    <input class="search" id="q" type="search" placeholder="Search a topic…">
+    <div class="chips" id="filters"></div>
+  </div>
+  <div id="list"></div>
+</main>
+<script src="assets/store.js?v=1"></script>
+<script src="assets/app.js?v=1"></script>
+<script src="assets/wordgrab.js?v=1"></script>
+<script>
+(async () => {
+  const topics = await EW.data('grammar');
+  await EW.hydrate();
+  const scores = EW.get('grammar:scores', {});
+  const pbest = EW.get('grammar:practice', {});
+  const shuffle = a => a.map(x => [Math.random(), x]).sort((p, q) => p[0] - q[0]).map(x => x[1]);
+  let group = 'all', query = '';
+  const fEl = document.getElementById('filters'), lEl = document.getElementById('list');
+  const groups = [...new Set(topics.map(t => t.group))];
+  fEl.innerHTML = [['all', 'all topics'], ...groups.map(g => [g, g])]
+    .map(([v, t]) => `<button class="chip" data-f="${esc(v)}" aria-pressed="${v === 'all'}">${esc(t)}</button>`).join('');
+  fEl.onclick = e => {
+    const b = e.target.closest('.chip'); if (!b) return;
+    group = b.dataset.f;
+    fEl.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed', c.dataset.f === group));
+    render();
+  };
+  document.getElementById('q').oninput = e => { query = e.target.value.trim().toLowerCase(); render(); };
+
+  function topicHtml(t) {
+    const rules = t.rules.map(r => `<div class="rule">
+        <h3>${esc(r.name)}</h3>
+        <div class="form">${esc(r.form)}</div>
+        <p class="muted" style="margin:0 0 8px">${esc(r.when)}</p>
+        ${r.examples.map(x => `<p class="ex"><b>${esc(x.en)}</b>${x.uk ? `<br><span class="uk uk-tr">${esc(x.uk)}</span>` : ''}</p>`).join('')}
+      </div>`).join('');
+    const mistakes = t.mistakes.map(m => `<div class="mistake">
+        <span class="no">✗ ${esc(m.wrong)}</span>
+        <span class="yes">✓ ${esc(m.right)}</span>
+        <span class="muted">${esc(m.note)}</span></div>`).join('');
+    const best = scores[t.id];
+    return `<details class="acc" data-id="${esc(t.id)}">
+      <summary><span class="tag t-violet">${esc(t.level)}</span> ${esc(t.title)}
+        <span class="muted" style="font-weight:400">— ${esc(t.uk)}</span>
+        ${best ? `<span class="tag t-ok" style="margin-left:8px">${best.score}/${best.total}</span>` : ''}</summary>
+      <div class="acc-body">
+        <p class="muted" style="margin-top:0">${esc(t.summary)}</p>
+        ${rules}
+        <h3 style="margin-top:22px">Common mistakes</h3>
+        ${mistakes}
+        <h3 style="margin-top:22px">Check yourself</h3>
+        <div class="quiz" data-id="${esc(t.id)}"></div>
+        ${t.practice && t.practice.length ? `
+        <h3 style="margin-top:26px">Grammar practice</h3>
+        <p class="muted" style="margin:0 0 10px">${t.practice.length} more questions on this rule, in random order, with a short explanation after every answer.</p>
+        <div class="practice" data-id="${esc(t.id)}"></div>` : ''}
+      </div></details>`;
+  }
+
+  function practice(t) {
+    const box = lEl.querySelector(`.practice[data-id="${t.id}"]`);
+    if (!box || !t.practice || !t.practice.length) return;
+    const start = () => {
+      const deck = shuffle(t.practice);
+      let i = 0, score = 0;
+      const draw = () => {
+        if (i >= deck.length) {
+          if (!pbest[t.id] || score > pbest[t.id].score) { pbest[t.id] = { score, total: deck.length }; EW.set('grammar:practice', pbest); }
+          EW.push('quiz', { area: 'practice', topic: t.id, score, total: deck.length });
+          const pct = Math.round(score / deck.length * 100);
+          box.innerHTML = `<div class="card" style="box-shadow:none;background:var(--surface-2);text-align:center">
+              <div style="font-family:var(--display);font-size:34px;font-weight:700;letter-spacing:-.03em">${score} / ${deck.length}</div>
+              <div class="bar" style="margin:12px auto 14px;max-width:320px"><i style="width:${pct}%"></i></div>
+              <p class="muted" style="margin:0 0 14px">${pct === 100 ? 'Every single one. \u{1F525}' : pct >= 80 ? 'Solid — this rule is nearly automatic.' : pct >= 50 ? 'Halfway there. Read the rule again and run it once more.' : 'Read the rule above, then try again — it will click.'}</p>
+              <button class="btn btn-accent btn-sm" data-restart="1">Practise again</button></div>`;
+          box.querySelector('[data-restart]').onclick = start;
+          return;
+        }
+        const q = deck[i];
+        box.innerHTML = `<div class="bar" style="margin:0 0 12px"><i style="width:${Math.round(i / deck.length * 100)}%"></i></div>
+          <p class="muted mono" style="margin:0 0 6px">${i + 1} / ${deck.length} · score ${score}</p>
+          <p class="quiz-q">${esc(q.q)}</p>
+          <div class="opts">${q.options.map((o, n) => `<button class="opt" data-n="${n}">${esc(o)}</button>`).join('')}</div>
+          <div class="why" style="display:none"></div>`;
+        box.querySelector('.opts').onclick = e => {
+          const b = e.target.closest('.opt'); if (!b || b.disabled) return;
+          const n = +b.dataset.n, right = n === q.answer;
+          if (right) score++;
+          box.querySelectorAll('.opt').forEach((x, k) => { x.disabled = true;
+            if (k === q.answer) x.classList.add('correct'); else if (k === n) x.classList.add('wrong'); });
+          const why = box.querySelector('.why');
+          why.style.display = 'block';
+          why.innerHTML = `<p style="margin:12px 0 0;font-weight:700;color:${right ? 'var(--ok)' : 'var(--bad)'}">${right ? '\u2713 Right.' : '\u2717 Not quite.'}</p>
+            <p class="muted" style="margin:4px 0 12px">${esc(q.why || '')}</p>
+            <button class="btn btn-accent btn-sm" data-next="1">${i + 1 === deck.length ? 'See the result' : 'Next question'}</button>`;
+          why.querySelector('[data-next]').onclick = () => { i++; draw(); };
+        };
+      };
+      draw();
+    };
+    const best = pbest[t.id];
+    box.innerHTML = `<button class="btn btn-accent btn-sm" data-start="1">\u25B6 Start practice (${t.practice.length} questions)</button>` +
+      (best ? `<span class="muted" style="margin-left:10px">best: ${best.score}/${best.total}</span>` : '');
+    box.querySelector('[data-start]').onclick = start;
+  }
+
+  function render() {
+    const rows = topics.filter(t =>
+      (group === 'all' || t.group === group) &&
+      (!query || (t.title + t.uk + t.summary).toLowerCase().includes(query)));
+    lEl.innerHTML = rows.map(topicHtml).join('') || '<p class="empty">No such topic yet.</p>';
+    rows.forEach(t => { quiz(t); practice(t); });
+  }
+  function quiz(t) {
+    const box = lEl.querySelector(`.quiz[data-id="${t.id}"]`);
+    if (!box) return;
+    let i = 0, score = 0;
+    const draw = () => {
+      if (i >= t.quiz.length) {
+        const prev = scores[t.id];
+        if (!prev || score > prev.score) { scores[t.id] = { score, total: t.quiz.length }; EW.set('grammar:scores', scores); }
+        EW.push('quiz', { area: 'grammar', topic: t.id, score, total: t.quiz.length });
+        box.innerHTML = `<p style="font-weight:700;font-size:18px">Your score: ${score} / ${t.quiz.length}
+          ${score === t.quiz.length ? ' 🔥' : ''}</p>
+          <button class="btn btn-ghost btn-sm" data-again="1">Try again</button>`;
+        box.querySelector('[data-again]').onclick = () => { i = 0; score = 0; draw(); };
+        return;
+      }
+      const q = t.quiz[i];
+      box.innerHTML = `<p class="muted mono" style="margin:0 0 6px">${i + 1} / ${t.quiz.length}</p>
+        <p class="quiz-q">${esc(q.q)}</p>
+        <div class="opts">${q.options.map((o, n) => `<button class="opt" data-n="${n}">${esc(o)}</button>`).join('')}</div>`;
+      box.querySelector('.opts').onclick = e => {
+        const b = e.target.closest('.opt'); if (!b) return;
+        const n = +b.dataset.n;
+        if (n === q.answer) score++;
+        box.querySelectorAll('.opt').forEach((x, k) => {
+          x.disabled = true;
+          if (k === q.answer) x.classList.add('correct');
+          else if (k === n) x.classList.add('wrong');
+        });
+        setTimeout(() => { i++; draw(); }, 850);
+      };
+    };
+    draw();
+  }
+  function openFromHash() {
+    const id = decodeURIComponent(location.hash.replace('#', '')).trim();
+    if (!id) return;
+    const d = lEl.querySelector(`details.acc[data-id="${CSS.escape(id)}"]`);
+    if (!d) return;
+    d.open = true;
+    d.classList.add('flash');
+    setTimeout(() => d.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60);
+    setTimeout(() => d.classList.remove('flash'), 2200);
+  }
+  // keep the address bar in step, so a topic can be copied and shared
+  lEl.addEventListener('toggle', e => {
+    const d = e.target.closest('details.acc');
+    if (d && d.open) history.replaceState(null, '', '#' + d.dataset.id);
+  }, true);
+  window.addEventListener('hashchange', openFromHash);
+
+  render();
+  openFromHash();
+})();
+</script>
+</body>
+</html>

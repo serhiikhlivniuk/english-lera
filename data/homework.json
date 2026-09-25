@@ -1,0 +1,37 @@
+[
+  {
+    "id": "hw-01",
+    "lesson": "lesson-01",
+    "title": "Homework after Lesson 1",
+    "assigned": "2026-09-25",
+    "due": "2026-10-02",
+    "note": "Do a little every day instead of everything on the last evening. The grammar quizzes take 5 minutes each.",
+    "items": [
+      {
+        "id": "hw-01-1",
+        "text": "Exercise 15: write 50–70 words about your typical weekday.",
+        "type": "writing"
+      },
+      {
+        "id": "hw-01-2",
+        "text": "Learn the 20 words from Lesson 1 — use the flashcards in the Vocabulary section.",
+        "type": "vocab"
+      },
+      {
+        "id": "hw-01-3",
+        "text": "Grammar section: take the quizzes on to be, Present Simple and he / she / it spelling.",
+        "type": "grammar"
+      },
+      {
+        "id": "hw-01-4",
+        "text": "Finish Exercises 13 and 14 on the lesson page if you did not do them in class.",
+        "type": "grammar"
+      },
+      {
+        "id": "hw-01-5",
+        "text": "Optional: open zno.osvita.ua (Links section) and just look at one NMT English test. Do not try to do it yet.",
+        "type": "reading"
+      }
+    ]
+  }
+]

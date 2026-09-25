@@ -1,0 +1,58 @@
+[
+  {
+    "title": "NMT / ZNO English tests online",
+    "url": "https://zno.osvita.ua/english/",
+    "type": "practice",
+    "level": "B1–B2",
+    "note": "Real NMT and ZNO tests from past years. We will use them step by step."
+  },
+  {
+    "title": "УЦОЯО — NMT programmes",
+    "url": "https://testportal.gov.ua/programy-nmt/",
+    "type": "article",
+    "level": "any",
+    "note": "The official programme: which topics and grammar are in the test."
+  },
+  {
+    "title": "British Council — Present simple (video + exercises)",
+    "url": "https://learnenglishteens.britishcouncil.org/grammar/beginner-grammar/present-simple",
+    "type": "video",
+    "level": "A1–A2",
+    "note": "The video from Exercise 13, plus two short grammar exercises."
+  },
+  {
+    "title": "BBC Learning English — 6 Minute English",
+    "url": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english",
+    "type": "video",
+    "level": "B1",
+    "note": "Short audio with a full transcript. Listen to one episode a week."
+  },
+  {
+    "title": "British Council — LearnEnglish Teens",
+    "url": "https://learnenglishteens.britishcouncil.org/",
+    "type": "practice",
+    "level": "A2–B1",
+    "note": "Exercises, videos and texts written for your age group."
+  },
+  {
+    "title": "Cambridge Dictionary",
+    "url": "https://dictionary.cambridge.org/",
+    "type": "tool",
+    "level": "any",
+    "note": "Meanings, pronunciation and examples. Turn on the British audio."
+  },
+  {
+    "title": "Quizlet",
+    "url": "https://quizlet.com/",
+    "type": "tool",
+    "level": "any",
+    "note": "If you want extra flashcards, build a set from our vocabulary list."
+  },
+  {
+    "title": "YouGlish",
+    "url": "https://youglish.com/",
+    "type": "tool",
+    "level": "any",
+    "note": "Type a word and hear how real people pronounce it in videos."
+  }
+]

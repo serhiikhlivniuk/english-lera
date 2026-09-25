@@ -1,0 +1,46 @@
+[
+  {
+    "id": "sp-01",
+    "lesson": "lesson-01",
+    "title": "All about me",
+    "minutes": 8,
+    "level": "A1+ → A2",
+    "goal": "Talk about yourself and your typical day in the Present Simple — and one person in your family with he / she + -s.",
+    "grammar": [
+      "to-be",
+      "present-simple",
+      "he-she-it-spelling",
+      "adverbs-of-frequency"
+    ],
+    "warmup": [
+      "What is your name, and how old are you?",
+      "Where do you live? Do you like your town?",
+      "What is your favourite subject at school? Why?"
+    ],
+    "main": {
+      "task": "Describe your typical weekday from morning to night.",
+      "howto": "One or two minutes. Use at least five routine phrases, two times of day and two adverbs of frequency. Short sentences are fine.",
+      "prompts": [
+        "What time do you usually wake up? Do you get up straight away?",
+        "What do you have for breakfast?",
+        "How do you get to school? What time do lessons finish?",
+        "What do you do after school?",
+        "What time do you usually go to bed?"
+      ]
+    },
+    "phrases": [
+      "On weekdays I usually…",
+      "At … o'clock I…",
+      "After school I…",
+      "I never / rarely / sometimes…",
+      "In my free time I…",
+      "My mum / brother … -s every day."
+    ],
+    "followup": [
+      "What do you like most about your day?",
+      "What is different at the weekend?",
+      "Tell me about one person in your family: what does he or she do every day?"
+    ],
+    "teacher": "Не виправляй під час розповіді — запиши 3–4 помилки (особливо he/she без -s і I am + verb) і розбери їх наприкінці. Це вхідний урок: головне, щоб вона говорила, навіть короткими реченнями."
+  }
+]

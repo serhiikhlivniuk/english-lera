@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-base="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="assets/app.css?v=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230E8F7E'/><text x='50' y='68' font-size='52' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'>EN</text></svg>">
+<title>Homework · Lera's English</title>
+</head>
+<body>
+<main class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">Homework</p>
+    <h1>What to do before the next lesson</h1>
+    <p class="lede">Tick a task when you finish it. Your progress is saved — and your teacher can see it.</p>
+  </div>
+  <div id="list"></div>
+</main>
+<script src="assets/store.js?v=1"></script>
+<script src="assets/app.js?v=1"></script>
+<script src="assets/wordgrab.js?v=1"></script>
+<script>
+(async () => {
+  const [hw, lessons] = await Promise.all([EW.data('homework'), EW.data('lessons')]);
+  await EW.hydrate();
+  const lname = id => { const l = lessons.find(x => x.id === id); return l ? `Lesson ${l.number} — ${l.title}` : id; };
+  const TYPE = { vocab: ['🔤', 't-cyan'], writing: ['✍️', 't-violet'], grammar: ['🧩', 't-amber'],
+                 listening: ['🎧', 't-pink'], speaking: ['🗣', 't-lime'], reading: ['📖', 't-cyan'] };
+  let done = EW.get('hw:done', {});
+  const lEl = document.getElementById('list');
+
+  function render() {
+    lEl.innerHTML = hw.map((h, idx) => {
+      const n = h.items.filter(i => done[i.id]).length;
+      const pct = Math.round(n / h.items.length * 100);
+      const overdue = new Date(h.due + 'T23:59:59') < new Date() && n < h.items.length;
+      return `<details class="acc" ${idx === 0 ? 'open' : ''}>
+        <summary><span class="tag ${pct === 100 ? 't-ok' : overdue ? 't-pink' : 't-violet'}">${pct === 100 ? 'done' : overdue ? 'overdue' : 'due ' + fmtDate(h.due)}</span>
+          ${esc(h.title)} <span class="muted" style="font-weight:400">— ${n}/${h.items.length}</span></summary>
+        <div class="acc-body">
+          <p class="muted" style="margin-top:0">${esc(lname(h.lesson))} · set on ${fmtDate(h.assigned)}</p>
+          <div class="bar" style="margin:0 0 18px"><i style="width:${pct}%"></i></div>
+          <ul class="list">${h.items.map(i => {
+            const [ic, tone] = TYPE[i.type] || ['•', 't-violet'];
+            return `<li class="row"><label class="check" style="width:100%">
+              <input type="checkbox" data-id="${esc(i.id)}" ${done[i.id] ? 'checked' : ''}>
+              <span class="grow"><span class="tag ${tone}" style="margin-right:8px">${ic} ${esc(i.type)}</span>${esc(i.text)}</span>
+            </label></li>`;
+          }).join('')}</ul>
+          ${h.note ? `<p class="muted" style="margin-top:16px">💬 ${esc(h.note)}</p>` : ''}
+        </div></details>`;
+    }).join('');
+  }
+  lEl.onchange = e => {
+    const c = e.target.closest('input[type=checkbox]'); if (!c) return;
+    done = { ...done, [c.dataset.id]: c.checked };
+    EW.set('hw:done', done);
+    EW.push('homework', { item: c.dataset.id, done: c.checked });
+    const open = [...lEl.querySelectorAll('details')].map(d => d.open);
+    render();
+    [...lEl.querySelectorAll('details')].forEach((d, i) => d.open = open[i]);
+  };
+  render();
+})();
+</script>
+</body>
+</html>

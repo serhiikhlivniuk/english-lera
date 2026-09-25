@@ -1,0 +1,1005 @@
+[
+  {
+    "id": "to-be",
+    "group": "Basics",
+    "title": "The verb to be",
+    "uk": "am · is · are",
+    "level": "A1",
+    "summary": "am, is and are — the most frequent verb in English. It does not need do/does.",
+    "lessons": [
+      "lesson-01"
+    ],
+    "rules": [
+      {
+        "name": "Positive",
+        "form": "I am (I'm) · he / she / it is ('s) · you / we / they are ('re)",
+        "when": "Age, name, jobs, feelings, places, descriptions.",
+        "examples": [
+          {
+            "en": "I'm sixteen.",
+            "uk": "Мені шістнадцять."
+          },
+          {
+            "en": "My mum is a doctor.",
+            "uk": "Моя мама — лікарка."
+          }
+        ]
+      },
+      {
+        "name": "Negative",
+        "form": "I'm not · he isn't · we aren't",
+        "when": "Add not after the verb. No do / does here.",
+        "examples": [
+          {
+            "en": "She isn't at home.",
+            "uk": "Її немає вдома."
+          },
+          {
+            "en": "We aren't late.",
+            "uk": "Ми не запізнюємося."
+          }
+        ]
+      },
+      {
+        "name": "Questions",
+        "form": "Am I …? · Is he …? · Are you …?  —  Yes, I am. / No, he isn't.",
+        "when": "Put the verb before the subject.",
+        "examples": [
+          {
+            "en": "Are you tired?",
+            "uk": "Ти втомилася?"
+          },
+          {
+            "en": "Is English difficult?",
+            "uk": "Англійська складна?"
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "I have sixteen years.",
+        "right": "I'm sixteen.",
+        "note": "age takes to be"
+      },
+      {
+        "wrong": "She not at home.",
+        "right": "She isn't at home.",
+        "note": "the verb cannot be skipped"
+      },
+      {
+        "wrong": "Do you tired?",
+        "right": "Are you tired?",
+        "note": "no do with to be"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "My friends ___ from Kharkiv.",
+        "options": [
+          "is",
+          "are",
+          "am"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "I ___ seventeen years old.",
+        "options": [
+          "have",
+          "am",
+          "is"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "___ your sister at school now?",
+        "options": [
+          "Does",
+          "Is",
+          "Are"
+        ],
+        "answer": 1
+      }
+    ],
+    "practice": [
+      {
+        "q": "My dad ___ a driver.",
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "answer": 1,
+        "why": "my dad = he → is."
+      },
+      {
+        "q": "We ___ in the eleventh grade.",
+        "options": [
+          "is",
+          "am",
+          "are"
+        ],
+        "answer": 2,
+        "why": "we → are."
+      },
+      {
+        "q": "I ___ hungry.",
+        "options": [
+          "'m not",
+          "isn't",
+          "don't"
+        ],
+        "answer": 0,
+        "why": "I → am not, short form I'm not."
+      },
+      {
+        "q": "___ they your cousins?",
+        "options": [
+          "Do",
+          "Is",
+          "Are"
+        ],
+        "answer": 2,
+        "why": "Questions with to be: are + they."
+      },
+      {
+        "q": "It ___ very cold today.",
+        "options": [
+          "is",
+          "are",
+          "be"
+        ],
+        "answer": 0,
+        "why": "it → is."
+      },
+      {
+        "q": "Choose the correct sentence.",
+        "options": [
+          "I have 16 years.",
+          "I'm 16.",
+          "I am have 16."
+        ],
+        "answer": 1,
+        "why": "In English we use to be for age."
+      },
+      {
+        "q": "Is she your teacher? — No, she ___.",
+        "options": [
+          "doesn't",
+          "isn't",
+          "not"
+        ],
+        "answer": 1,
+        "why": "Short answers repeat the verb: is → isn't."
+      },
+      {
+        "q": "You ___ late again!",
+        "options": [
+          "is",
+          "am",
+          "are"
+        ],
+        "answer": 2,
+        "why": "you → are."
+      },
+      {
+        "q": "Where ___ my keys?",
+        "options": [
+          "is",
+          "are",
+          "am"
+        ],
+        "answer": 1,
+        "why": "keys is plural → are."
+      },
+      {
+        "q": "Choose the correct question.",
+        "options": [
+          "Do you ready?",
+          "Are you ready?",
+          "You are ready?"
+        ],
+        "answer": 1,
+        "why": "No do with to be — just swap the verb and the subject."
+      }
+    ]
+  },
+  {
+    "id": "present-simple",
+    "group": "Tenses",
+    "title": "Present Simple",
+    "uk": "habits, routines and facts",
+    "level": "A1–A2",
+    "summary": "Habits, timetables, facts and things that are generally true.",
+    "lessons": [
+      "lesson-01"
+    ],
+    "rules": [
+      {
+        "name": "Form",
+        "form": "I / you / we / they + V  ·  he / she / it + V-s",
+        "when": "Positive sentences.",
+        "examples": [
+          {
+            "en": "I play football every weekend.",
+            "uk": "Я граю у футбол щовихідних."
+          },
+          {
+            "en": "She plays the guitar.",
+            "uk": "Вона грає на гітарі."
+          }
+        ]
+      },
+      {
+        "name": "Negatives and questions",
+        "form": "do / does + not + V  ·  Do / Does + subject + V?",
+        "when": "After do/does the main verb never takes -s.",
+        "examples": [
+          {
+            "en": "He doesn't play chess.",
+            "uk": "Він не грає в шахи."
+          },
+          {
+            "en": "Does she like drawing?",
+            "uk": "Їй подобається малювати?"
+          }
+        ]
+      },
+      {
+        "name": "Time expressions",
+        "form": "always · usually · often · sometimes · hardly ever · never · every day · on Mondays",
+        "when": "These words almost always go with the Present Simple.",
+        "examples": [
+          {
+            "en": "I hardly ever watch TV.",
+            "uk": "Я майже ніколи не дивлюсь телевізор."
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "He don't like it.",
+        "right": "He doesn't like it.",
+        "note": "he / she / it → doesn't"
+      },
+      {
+        "wrong": "Does she plays tennis?",
+        "right": "Does she play tennis?",
+        "note": "after does, use the base form"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "She ___ (go) to the gym on Mondays.",
+        "options": [
+          "go",
+          "goes",
+          "is going"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "They ___ like horror films.",
+        "options": [
+          "doesn't",
+          "don't",
+          "aren't"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "___ your brother play the piano?",
+        "options": [
+          "Do",
+          "Does",
+          "Is"
+        ],
+        "answer": 1
+      }
+    ],
+    "practice": [
+      {
+        "q": "My brother ___ the guitar every evening.",
+        "options": [
+          "play",
+          "plays",
+          "is playing"
+        ],
+        "answer": 1,
+        "why": "he / she / it takes -s in the Present Simple."
+      },
+      {
+        "q": "We ___ football on Saturdays.",
+        "options": [
+          "plays",
+          "play",
+          "are playing"
+        ],
+        "answer": 1,
+        "why": "we takes the base form."
+      },
+      {
+        "q": "She ___ coffee — she prefers tea.",
+        "options": [
+          "doesn't drink",
+          "don't drink",
+          "isn't drinking"
+        ],
+        "answer": 0,
+        "why": "she → doesn't + base form."
+      },
+      {
+        "q": "___ your parents work at the weekend?",
+        "options": [
+          "Does",
+          "Do",
+          "Are"
+        ],
+        "answer": 1,
+        "why": "your parents = they → Do."
+      },
+      {
+        "q": "The shop ___ at nine every morning.",
+        "options": [
+          "open",
+          "opens",
+          "is opening"
+        ],
+        "answer": 1,
+        "why": "A regular timetable takes the Present Simple, and the shop = it."
+      },
+      {
+        "q": "I ___ how to swim.",
+        "options": [
+          "not know",
+          "don't know",
+          "doesn't know"
+        ],
+        "answer": 1,
+        "why": "I → don't."
+      },
+      {
+        "q": "Choose the correct question.",
+        "options": [
+          "Does she goes to school by bus?",
+          "Does she go to school by bus?",
+          "Do she go to school by bus?"
+        ],
+        "answer": 1,
+        "why": "After does the verb has no -s."
+      },
+      {
+        "q": "Water ___ at 100 degrees.",
+        "options": [
+          "boil",
+          "boils",
+          "is boiling"
+        ],
+        "answer": 1,
+        "why": "A general fact takes the Present Simple."
+      },
+      {
+        "q": "My friends ___ live near me.",
+        "options": [
+          "doesn't",
+          "don't",
+          "aren't"
+        ],
+        "answer": 1,
+        "why": "my friends = they → don't."
+      },
+      {
+        "q": "He ___ his room on Sundays.",
+        "options": [
+          "tidy",
+          "tidys",
+          "tidies"
+        ],
+        "answer": 2,
+        "why": "A verb ending in consonant + y changes to -ies."
+      }
+    ]
+  },
+  {
+    "id": "he-she-it-spelling",
+    "group": "Tenses",
+    "title": "he / she / it: -s, -es, -ies",
+    "uk": "the third-person ending",
+    "level": "A1",
+    "summary": "In the Present Simple, he, she and it add an ending to the verb. Here is which one.",
+    "lessons": [
+      "lesson-01"
+    ],
+    "rules": [
+      {
+        "name": "Most verbs: -s",
+        "form": "work → works · play → plays · like → likes",
+        "when": "The normal case.",
+        "examples": [
+          {
+            "en": "She works in a shop.",
+            "uk": "Вона працює в магазині."
+          }
+        ]
+      },
+      {
+        "name": "-ss, -sh, -ch, -x, -o: -es",
+        "form": "watch → watches · wash → washes · fix → fixes · go → goes · do → does",
+        "when": "After these endings we add -es (it is easier to say).",
+        "examples": [
+          {
+            "en": "He watches series every evening.",
+            "uk": "Він щовечора дивиться серіали."
+          }
+        ]
+      },
+      {
+        "name": "consonant + y: -ies",
+        "form": "study → studies · try → tries   BUT  play → plays",
+        "when": "Only when a consonant comes before y. Vowel + y just adds -s.",
+        "examples": [
+          {
+            "en": "My sister studies at university.",
+            "uk": "Моя сестра навчається в університеті."
+          }
+        ]
+      },
+      {
+        "name": "have → has",
+        "form": "I have · she has",
+        "when": "The one irregular verb you need now.",
+        "examples": [
+          {
+            "en": "He has a dog.",
+            "uk": "У нього є собака."
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "She watchs TV.",
+        "right": "She watches TV.",
+        "note": "-ch → -es"
+      },
+      {
+        "wrong": "He studys English.",
+        "right": "He studies English.",
+        "note": "consonant + y → -ies"
+      },
+      {
+        "wrong": "She haves a cat.",
+        "right": "She has a cat.",
+        "note": "have → has"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "go → he ___",
+        "options": [
+          "gos",
+          "goes",
+          "goies"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "play → she ___",
+        "options": [
+          "plays",
+          "plaies",
+          "playes"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "study → it ___",
+        "options": [
+          "studys",
+          "studyes",
+          "studies"
+        ],
+        "answer": 2
+      }
+    ],
+    "practice": [
+      {
+        "q": "wash → she ___",
+        "options": [
+          "washs",
+          "washes",
+          "washies"
+        ],
+        "answer": 1,
+        "why": "-sh takes -es."
+      },
+      {
+        "q": "try → he ___",
+        "options": [
+          "trys",
+          "tries",
+          "tryes"
+        ],
+        "answer": 1,
+        "why": "r + y is consonant + y → -ies."
+      },
+      {
+        "q": "have → it ___",
+        "options": [
+          "haves",
+          "has",
+          "have"
+        ],
+        "answer": 1,
+        "why": "have is irregular: has."
+      },
+      {
+        "q": "do → she ___",
+        "options": [
+          "dos",
+          "does",
+          "doies"
+        ],
+        "answer": 1,
+        "why": "Verbs ending in -o take -es."
+      },
+      {
+        "q": "buy → he ___",
+        "options": [
+          "buies",
+          "buys",
+          "buyes"
+        ],
+        "answer": 1,
+        "why": "u + y is vowel + y → just -s."
+      },
+      {
+        "q": "fix → she ___",
+        "options": [
+          "fixs",
+          "fixes",
+          "fixies"
+        ],
+        "answer": 1,
+        "why": "-x takes -es."
+      },
+      {
+        "q": "finish → he ___",
+        "options": [
+          "finishs",
+          "finishes",
+          "finishies"
+        ],
+        "answer": 1,
+        "why": "-sh takes -es."
+      },
+      {
+        "q": "cry → the baby ___",
+        "options": [
+          "cries",
+          "crys",
+          "cryes"
+        ],
+        "answer": 0,
+        "why": "r + y → -ies."
+      },
+      {
+        "q": "live → she ___",
+        "options": [
+          "lives",
+          "livs",
+          "livees"
+        ],
+        "answer": 0,
+        "why": "A normal verb: just -s."
+      },
+      {
+        "q": "Which is wrong?",
+        "options": [
+          "He goes",
+          "She watchs",
+          "It works"
+        ],
+        "answer": 1,
+        "why": "watch → watches."
+      }
+    ]
+  },
+  {
+    "id": "present-simple-questions",
+    "group": "Tenses",
+    "title": "Present Simple: questions and short answers",
+    "uk": "do / does + subject + verb",
+    "level": "A1–A2",
+    "summary": "Do and does make questions. After them the verb has no ending.",
+    "lessons": [
+      "lesson-01"
+    ],
+    "rules": [
+      {
+        "name": "Yes / No questions",
+        "form": "Do + I / you / we / they + V?  ·  Does + he / she / it + V?",
+        "when": "The -s moves from the verb to does.",
+        "examples": [
+          {
+            "en": "Do you like music?",
+            "uk": "Тобі подобається музика?"
+          },
+          {
+            "en": "Does she live near you?",
+            "uk": "Вона живе біля тебе?"
+          }
+        ]
+      },
+      {
+        "name": "Short answers",
+        "form": "Yes, I do. / No, I don't.  ·  Yes, she does. / No, she doesn't.",
+        "when": "Answer with do / does, not with the main verb.",
+        "examples": [
+          {
+            "en": "Does he play football? — Yes, he does.",
+            "uk": "Він грає у футбол? — Так."
+          }
+        ]
+      },
+      {
+        "name": "Wh- questions",
+        "form": "Question word + do / does + subject + V?",
+        "when": "Where, What, When, What time, How often, Why — they go first.",
+        "examples": [
+          {
+            "en": "Where do you live?",
+            "uk": "Де ти живеш?"
+          },
+          {
+            "en": "What time does the lesson start?",
+            "uk": "О котрій починається урок?"
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Does she likes pizza?",
+        "right": "Does she like pizza?",
+        "note": "after does — no -s"
+      },
+      {
+        "wrong": "You like music?",
+        "right": "Do you like music?",
+        "note": "a question needs do"
+      },
+      {
+        "wrong": "Where you live?",
+        "right": "Where do you live?",
+        "note": "do after the question word"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "___ your brother play the guitar?",
+        "options": [
+          "Do",
+          "Does",
+          "Is"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "Do you have a pet? — Yes, I ___.",
+        "options": [
+          "have",
+          "do",
+          "am"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "Where ___ your parents work?",
+        "options": [
+          "do",
+          "does",
+          "are"
+        ],
+        "answer": 0
+      }
+    ],
+    "practice": [
+      {
+        "q": "___ you speak Polish?",
+        "options": [
+          "Does",
+          "Do",
+          "Are"
+        ],
+        "answer": 1,
+        "why": "you → Do."
+      },
+      {
+        "q": "Does it rain a lot in Lviv? — Yes, it ___.",
+        "options": [
+          "rains",
+          "does",
+          "is"
+        ],
+        "answer": 1,
+        "why": "Short answer repeats does."
+      },
+      {
+        "q": "Choose the correct question.",
+        "options": [
+          "Does he works here?",
+          "Does he work here?",
+          "Do he work here?"
+        ],
+        "answer": 1,
+        "why": "he → Does, then the base form."
+      },
+      {
+        "q": "What ___ she do at the weekend?",
+        "options": [
+          "do",
+          "does",
+          "is"
+        ],
+        "answer": 1,
+        "why": "she → does."
+      },
+      {
+        "q": "How often ___ you go to the gym?",
+        "options": [
+          "do",
+          "does",
+          "are"
+        ],
+        "answer": 0,
+        "why": "you → do."
+      },
+      {
+        "q": "Do your friends like K-pop? — No, they ___.",
+        "options": [
+          "doesn't",
+          "don't",
+          "aren't"
+        ],
+        "answer": 1,
+        "why": "they → don't."
+      },
+      {
+        "q": "Choose the correct question.",
+        "options": [
+          "Where you live?",
+          "Where do you live?",
+          "Where does you live?"
+        ],
+        "answer": 1,
+        "why": "Question word + do + subject + verb."
+      },
+      {
+        "q": "What time ___ the shop open?",
+        "options": [
+          "do",
+          "does",
+          "is"
+        ],
+        "answer": 1,
+        "why": "the shop = it → does."
+      },
+      {
+        "q": "___ Oksana and Maksym go to the same school?",
+        "options": [
+          "Does",
+          "Do",
+          "Are"
+        ],
+        "answer": 1,
+        "why": "Two people = they → Do."
+      },
+      {
+        "q": "Does she like tea? — ___",
+        "options": [
+          "Yes, she likes.",
+          "Yes, she does.",
+          "Yes, she is."
+        ],
+        "answer": 1,
+        "why": "Short answer: Yes, she does."
+      }
+    ]
+  },
+  {
+    "id": "adverbs-of-frequency",
+    "group": "Word order",
+    "title": "Adverbs of frequency",
+    "uk": "how often you do things",
+    "level": "A2",
+    "summary": "Where to put always, usually, often and never — and why that position is not random.",
+    "lessons": [
+      "lesson-01"
+    ],
+    "rules": [
+      {
+        "name": "The main rule",
+        "form": "before the main verb, but AFTER the verb to be",
+        "when": "always · usually · often · sometimes · rarely · never",
+        "examples": [
+          {
+            "en": "I always do my homework.",
+            "uk": "Я завжди роблю домашнє завдання."
+          },
+          {
+            "en": "He is never late.",
+            "uk": "Він ніколи не запізнюється."
+          }
+        ]
+      },
+      {
+        "name": "With an auxiliary verb",
+        "form": "auxiliary + adverb + main verb",
+        "when": "When there is can, will, have, or am/is/are + -ing.",
+        "examples": [
+          {
+            "en": "She can usually help me.",
+            "uk": "Вона зазвичай може мені допомогти."
+          }
+        ]
+      },
+      {
+        "name": "Frequency expressions",
+        "form": "once a week · twice a month · every day — at the start or end of the sentence",
+        "when": "These expressions never go in the middle of the sentence.",
+        "examples": [
+          {
+            "en": "We train twice a week.",
+            "uk": "Ми тренуємося двічі на тиждень."
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "I go always to school by bus.",
+        "right": "I always go to school by bus.",
+        "note": "before the main verb"
+      },
+      {
+        "wrong": "He never is tired.",
+        "right": "He is never tired.",
+        "note": "after the verb to be"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "Choose the correct sentence:",
+        "options": [
+          "I never am bored.",
+          "I am never bored.",
+          "Never I am bored."
+        ],
+        "answer": 1
+      },
+      {
+        "q": "She ___ goes to bed late.",
+        "options": [
+          "usually",
+          "a usually",
+          "usual"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "Where does 'twice a week' go?",
+        "options": [
+          "in the middle of the sentence",
+          "at the start or at the end",
+          "right after the subject"
+        ],
+        "answer": 1
+      }
+    ],
+    "practice": [
+      {
+        "q": "Choose the correct sentence.",
+        "options": [
+          "I always am hungry after school.",
+          "I am always hungry after school.",
+          "Always I am hungry after school."
+        ],
+        "answer": 1,
+        "why": "After the verb to be."
+      },
+      {
+        "q": "She ___ forgets her homework.",
+        "options": [
+          "never",
+          "never is",
+          "is never"
+        ],
+        "answer": 0,
+        "why": "Before a main verb."
+      },
+      {
+        "q": "We ___ go to the cinema.",
+        "options": [
+          "go sometimes",
+          "sometimes",
+          "sometimes go"
+        ],
+        "answer": 2,
+        "why": "The adverb goes before the main verb."
+      },
+      {
+        "q": "He is ___ late for the lesson.",
+        "options": [
+          "hardly ever",
+          "ever hardly",
+          "hardly"
+        ],
+        "answer": 0,
+        "why": "hardly ever = almost never."
+      },
+      {
+        "q": "Where does 'every morning' go?",
+        "options": [
+          "in the middle of the sentence",
+          "at the start or the end",
+          "right after the subject"
+        ],
+        "answer": 1,
+        "why": "Time expressions are not placed mid-sentence."
+      },
+      {
+        "q": "I ___ can help you on Sundays.",
+        "options": [
+          "usually",
+          "can usually",
+          "usually can"
+        ],
+        "answer": 1,
+        "why": "auxiliary + adverb + main verb."
+      },
+      {
+        "q": "They ___ watch TV in the morning.",
+        "options": [
+          "don't often",
+          "often don't",
+          "not often"
+        ],
+        "answer": 0,
+        "why": "The adverb comes after the auxiliary in a negative."
+      },
+      {
+        "q": "How often do you train? — ___",
+        "options": [
+          "Twice a week.",
+          "Two times in a week.",
+          "In twice a week."
+        ],
+        "answer": 0,
+        "why": "twice a week is the fixed form."
+      },
+      {
+        "q": "Which is wrong?",
+        "options": [
+          "She often is tired.",
+          "She is often tired.",
+          "She often gets tired."
+        ],
+        "answer": 0,
+        "why": "With to be the adverb goes after the verb."
+      },
+      {
+        "q": "My dad ___ drinks coffee in the evening.",
+        "options": [
+          "never",
+          "never not",
+          "not never"
+        ],
+        "answer": 0,
+        "why": "never is already negative — no second negative."
+      }
+    ]
+  }
+]

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" data-base="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="assets/app.css?v=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230E8F7E'/><text x='50' y='68' font-size='52' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'>EN</text></svg>">
+<title>Links · Lera's English</title>
+</head>
+<body>
+<main class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">Links</p>
+    <h1>Where to go between lessons</h1>
+    <p class="lede">Videos, practice sites and dictionaries. You don't need all of them — pick one or two and use them regularly.</p>
+  </div>
+  <div class="toolbar" id="filters"></div>
+  <div class="grid g2" id="list"></div>
+</main>
+<script src="assets/store.js?v=1"></script>
+<script src="assets/app.js?v=1"></script>
+<script src="assets/wordgrab.js?v=1"></script>
+<script>
+(async () => {
+  const links = await EW.data('links');
+  const ICON = { video: '🎬', article: '📄', practice: '🏋️', tool: '🛠️' };
+  const TONE = { video: 't-pink', article: 't-cyan', practice: 't-lime', tool: 't-amber' };
+  const types = ['all', ...new Set(links.map(l => l.type))];
+  let active = 'all';
+  const fEl = document.getElementById('filters'), lEl = document.getElementById('list');
+  fEl.innerHTML = types.map(t =>
+    `<button class="chip" data-t="${t}" aria-pressed="${t === 'all'}">${t}</button>`).join('');
+  fEl.onclick = e => {
+    const b = e.target.closest('.chip'); if (!b) return;
+    active = b.dataset.t;
+    fEl.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed', c.dataset.t === active));
+    render();
+  };
+  function render() {
+    const rows = links.filter(l => active === 'all' || l.type === active);
+    lEl.innerHTML = rows.map(l => `<a class="card" href="${esc(l.url)}" target="_blank" rel="noopener">
+      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+        <span style="font-size:22px">${ICON[l.type] || '🔗'}</span>
+        <span class="tag ${TONE[l.type] || 't-violet'}">${esc(l.type)}</span>
+        <span class="tag t-violet">${esc(l.level)}</span>
+      </div>
+      <h3 style="margin:12px 0 6px">${esc(l.title)}</h3>
+      <p class="muted" style="margin:0">${esc(l.note)}</p></a>`).join('')
+      || '<p class="empty">Nothing here yet.</p>';
+  }
+  render();
+})();
+</script>
+</body>
+</html>

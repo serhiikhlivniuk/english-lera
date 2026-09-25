@@ -1,0 +1,23 @@
+{
+  "workspace": "Lera's English",
+  "student": "Lera",
+  "teacher": "Serhii",
+  "meet": {
+    "url": "https://meet.google.com/uun-jdnb-upz",
+    "note": "Same link for every lesson — just click it at the right time.",
+    "timezone": "Europe/Kyiv",
+    "schedule": [
+      {
+        "dayIndex": 5,
+        "day": "Friday",
+        "time": "16:00",
+        "duration": 60
+      }
+    ]
+  },
+  "supabase": {
+    "url": "https://jukpfkhkosnslqmzolxo.supabase.co",
+    "anonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp1a3Bma2hrb3Nuc2xxbXpvbHhvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODk1Njg1MzksImV4cCI6MjEwNTE0NDUzOX0.1Hmyn2jeZgLiYM4aEcVJAPaQ570FXhQknhhjTnhdfGo",
+    "studentId": "Lera"
+  }
+}

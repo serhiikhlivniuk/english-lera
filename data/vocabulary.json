@@ -1,0 +1,225 @@
+[
+  {
+    "word": "wake up",
+    "pos": "phrasal verb",
+    "def": "to stop sleeping and open your eyes",
+    "uk": "прокидатися",
+    "example": "I usually wake up before my alarm.",
+    "lesson": "lesson-01",
+    "tags": [
+      "daily routine"
+    ]
+  },
+  {
+    "word": "get up",
+    "pos": "phrasal verb",
+    "def": "to get out of bed",
+    "uk": "вставати (з ліжка)",
+    "example": "She gets up at half past six.",
+    "lesson": "lesson-01",
+    "tags": [
+      "daily routine"
+    ]
+  },
+  {
+    "word": "get dressed",
+    "pos": "phrase",
+    "def": "to put on your clothes",
+    "uk": "одягатися",
+    "example": "I get dressed in five minutes.",
+    "lesson": "lesson-01",
+    "tags": [
+      "daily routine"
+    ]
+  },
+  {
+    "word": "have breakfast",
+    "pos": "phrase",
+    "def": "to eat your first meal of the day",
+    "uk": "снідати",
+    "example": "We have breakfast at seven.",
+    "lesson": "lesson-01",
+    "tags": [
+      "daily routine"
+    ]
+  },
+  {
+    "word": "brush your teeth",
+    "pos": "phrase",
+    "def": "to clean your teeth with a toothbrush",
+    "uk": "чистити зуби",
+    "example": "He brushes his teeth twice a day.",
+    "lesson": "lesson-01",
+    "tags": [
+      "daily routine"
+    ]
+  },
+  {
+    "word": "leave home",
+    "pos": "phrase",
+    "def": "to go out of your house",
+    "uk": "виходити з дому",
+    "example": "I leave home at half past seven.",
+    "lesson": "lesson-01",
+    "tags": [
+      "daily routine"
+    ]
+  },
+  {
+    "word": "do homework",
+    "pos": "phrase",
+    "def": "to do the tasks your teacher gives you for home",
+    "uk": "робити домашнє завдання",
+    "example": "She does her homework after dinner.",
+    "lesson": "lesson-01",
+    "tags": [
+      "daily routine",
+      "school"
+    ]
+  },
+  {
+    "word": "do the housework",
+    "pos": "phrase",
+    "def": "to clean, wash and tidy at home",
+    "uk": "виконувати хатню роботу",
+    "example": "My dad does the housework on Saturdays.",
+    "lesson": "lesson-01",
+    "tags": [
+      "daily routine",
+      "home"
+    ]
+  },
+  {
+    "word": "hang out (with)",
+    "pos": "phrasal verb",
+    "def": "to spend free time with friends without doing anything special",
+    "uk": "проводити час, тусуватися",
+    "example": "I often hang out with my friends after school.",
+    "lesson": "lesson-01",
+    "tags": [
+      "free time"
+    ]
+  },
+  {
+    "word": "go to bed",
+    "pos": "phrase",
+    "def": "to go to your bedroom to sleep",
+    "uk": "лягати спати",
+    "example": "I rarely go to bed before eleven.",
+    "lesson": "lesson-01",
+    "tags": [
+      "daily routine"
+    ]
+  },
+  {
+    "word": "fall asleep",
+    "pos": "phrase",
+    "def": "to start sleeping",
+    "uk": "засинати",
+    "example": "He always falls asleep in front of the TV.",
+    "lesson": "lesson-01",
+    "tags": [
+      "daily routine"
+    ]
+  },
+  {
+    "word": "spend",
+    "pos": "verb",
+    "def": "to use time doing something",
+    "uk": "проводити (час), витрачати",
+    "example": "I spend two hours a day on my phone.",
+    "lesson": "lesson-01",
+    "tags": [
+      "free time"
+    ]
+  },
+  {
+    "word": "prefer",
+    "pos": "verb",
+    "def": "to like one thing more than another",
+    "uk": "надавати перевагу",
+    "example": "I prefer tea to coffee.",
+    "lesson": "lesson-01",
+    "tags": [
+      "likes"
+    ]
+  },
+  {
+    "word": "be interested in",
+    "pos": "phrase",
+    "def": "to want to know more about something",
+    "uk": "цікавитися",
+    "example": "My brother is interested in cars.",
+    "lesson": "lesson-01",
+    "tags": [
+      "likes"
+    ]
+  },
+  {
+    "word": "be good at",
+    "pos": "phrase",
+    "def": "to be able to do something well",
+    "uk": "добре вміти, бути сильним у",
+    "example": "She is good at maths.",
+    "lesson": "lesson-01",
+    "tags": [
+      "school",
+      "likes"
+    ]
+  },
+  {
+    "word": "busy",
+    "pos": "adjective",
+    "def": "having a lot of things to do",
+    "uk": "зайнятий",
+    "example": "I am really busy on Mondays.",
+    "lesson": "lesson-01",
+    "tags": [
+      "daily routine"
+    ]
+  },
+  {
+    "word": "free time",
+    "pos": "noun",
+    "def": "time when you do not have to work or study",
+    "uk": "вільний час",
+    "example": "In my free time I watch series.",
+    "lesson": "lesson-01",
+    "tags": [
+      "free time"
+    ]
+  },
+  {
+    "word": "usually",
+    "pos": "adverb",
+    "def": "in most situations; almost always",
+    "uk": "зазвичай",
+    "example": "We usually have lunch at school.",
+    "lesson": "lesson-01",
+    "tags": [
+      "frequency"
+    ]
+  },
+  {
+    "word": "rarely",
+    "pos": "adverb",
+    "def": "not often; almost never",
+    "uk": "рідко",
+    "example": "I rarely eat fast food.",
+    "lesson": "lesson-01",
+    "tags": [
+      "frequency"
+    ]
+  },
+  {
+    "word": "twice a week",
+    "pos": "phrase",
+    "def": "two times every week",
+    "uk": "двічі на тиждень",
+    "example": "I have English lessons twice a week.",
+    "lesson": "lesson-01",
+    "tags": [
+      "frequency"
+    ]
+  }
+]

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" data-base="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="assets/app.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230E8F7E'/><text x='50' y='68' font-size='52' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'>EN</text></svg>">
+<title>Speaking · Lera's English</title>
+</head>
+<body>
+<main class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">Speaking</p>
+    <h1>Ten minutes of talking</h1>
+    <p class="lede">Every lesson has its own set: a warm-up, one longer task, phrases you can lean on, and questions that keep the conversation going. Look at it before the lesson — you will speak better if the topic is not a surprise.</p>
+  </div>
+  <div id="list"></div>
+</main>
+<script src="assets/store.js?v=1"></script>
+<script src="assets/app.js?v=1"></script>
+<script src="assets/wordgrab.js?v=1"></script>
+<script>
+(async () => {
+  const [sets, lessons, grammar] = await Promise.all([
+    EW.data('speaking'), EW.data('lessons'), EW.data('grammar')
+  ]);
+  await EW.hydrate();
+  const gname = id => (grammar.find(g => g.id === id) || {}).title || id;
+  const lname = id => { const l = lessons.find(x => x.id === id); return l ? `Lesson ${l.number} — ${l.title}` : id; };
+  const order = sets.slice().sort((a, b) => (lessons.findIndex(l => l.id === b.lesson)) - (lessons.findIndex(l => l.id === a.lesson)));
+
+  document.getElementById('list').innerHTML = order.map((s, idx) => `
+    <details class="acc" ${idx === 0 ? 'open' : ''}>
+      <summary><span class="tag t-lime">${s.minutes} min</span> ${esc(s.title)}
+        <span class="muted" style="font-weight:400">— ${esc(lname(s.lesson))}</span></summary>
+      <div class="acc-body">
+        <p class="muted" style="margin-top:0">🎯 ${esc(s.goal)}</p>
+        <div class="chips" style="margin-bottom:18px">${s.grammar.map(g =>
+          `<a class="chip" href="grammar.html#${esc(g)}" style="text-decoration:none">${esc(gname(g))}</a>`).join('')}</div>
+
+        <h3>Warm-up · 2 min</h3>
+        <ul class="list" style="margin-bottom:18px">${s.warmup.map(q =>
+          `<li class="row"><span>💬</span><span class="grow">${esc(q)}</span></li>`).join('')}</ul>
+
+        <h3>Main task · 5 min</h3>
+        <div class="card" style="box-shadow:none;background:var(--surface-2);margin-bottom:18px">
+          <p style="margin:0 0 6px;font-weight:700">${esc(s.main.task)}</p>
+          <p class="muted" style="margin:0 0 12px">${esc(s.main.howto)}</p>
+          <ul class="clean" style="margin:0;padding-left:20px">${s.main.prompts.map(p =>
+            `<li style="margin-bottom:6px">${esc(p)}</li>`).join('')}</ul>
+        </div>
+
+        <h3>Useful phrases</h3>
+        <div class="chips" style="margin-bottom:18px">${s.phrases.map(p =>
+          `<span class="chip" style="text-transform:none;font-family:var(--body);font-size:13.5px">${esc(p)}</span>`).join('')}</div>
+
+        <h3>Keep it going · 3 min</h3>
+        <ul class="list">${s.followup.map(q =>
+          `<li class="row"><span>🔁</span><span class="grow">${esc(q)}</span></li>`).join('')}</ul>
+      </div>
+    </details>`).join('');
+})();
+</script>
+</body>
+</html>

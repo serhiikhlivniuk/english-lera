@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en" data-base="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="assets/app.css?v=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230E8F7E'/><text x='50' y='68' font-size='52' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'>EN</text></svg>">
+<title>Vocabulary · Lera's English</title>
+</head>
+<body>
+<main class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">Vocabulary</p>
+    <h1>My words</h1>
+    <p class="lede">All the words from our lessons. Tick the ones you already know, and train the rest with flashcards or the quiz. Need the Ukrainian? Press <b>UA</b> at the top.</p>
+  </div>
+
+  <div class="stats" style="margin-bottom:24px">
+    <div class="stat"><div class="n" id="s-total">0</div><div class="l">words in total</div></div>
+    <div class="stat"><div class="n" id="s-known">0</div><div class="l">marked as known</div>
+      <div class="bar lime" style="margin-top:10px"><i id="s-bar" style="width:0%"></i></div></div>
+    <div class="stat"><div class="n" id="s-left">0</div><div class="l">still to learn</div></div>
+  </div>
+
+  <div class="card" style="margin-bottom:28px">
+    <div class="section-head"><h2>Trainer</h2><span class="muted" id="tr-count"></span></div>
+    <div class="toolbar">
+      <button class="btn btn-accent btn-sm" id="m-flash">🃏 Flashcards</button>
+      <button class="btn btn-ghost btn-sm" id="m-quiz">🎯 Quiz</button>
+      <button class="btn btn-ghost btn-sm" id="m-off">✕ Close</button>
+    </div>
+    <div id="trainer"></div>
+  </div>
+
+  <div class="card" id="mine-card" style="margin-bottom:28px" hidden>
+    <div class="section-head"><h2>My own words</h2><span class="muted" id="mine-count"></span></div>
+    <p class="muted" style="margin:0 0 14px">Words you picked up yourself. Select any word anywhere on this site and press <b>＋ Add to my words</b>. Your tutor sees this list and turns them into proper entries.</p>
+    <div id="mine"></div>
+  </div>
+
+  <div class="toolbar">
+    <input class="search" id="q" type="search" placeholder="Search a word or a meaning…">
+    <div class="chips" id="filters"></div>
+  </div>
+  <div class="grid g2" id="list"></div>
+</main>
+<script src="assets/store.js?v=1"></script>
+<script src="assets/app.js?v=1"></script>
+<script src="assets/wordgrab.js?v=1"></script>
+<script>
+(async () => {
+  const [vocab, lessons] = await Promise.all([EW.data('vocabulary'), EW.data('lessons')]);
+  await EW.hydrate();
+  const title = id => { const l = lessons.find(x => x.id === id); return l ? `Lesson ${l.number}` : id; };
+  let known = EW.get('vocab:known', []);
+  let filter = 'all', query = '';
+
+  const $ = s => document.querySelector(s);
+  const fEl = $('#filters'), lEl = $('#list');
+  const groups = [...new Set(vocab.map(v => v.lesson))];
+  fEl.innerHTML = [['all', 'all'], ...groups.map(g => [g, title(g)]), ['todo', 'not learnt yet']]
+    .map(([v, t]) => `<button class="chip" data-f="${v}" aria-pressed="${v === 'all'}">${esc(t)}</button>`).join('');
+  fEl.onclick = e => {
+    const b = e.target.closest('.chip'); if (!b) return;
+    filter = b.dataset.f;
+    fEl.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed', c.dataset.f === filter));
+    render();
+  };
+  $('#q').oninput = e => { query = e.target.value.trim().toLowerCase(); render(); };
+
+  function stats() {
+    const k = known.length, t = vocab.length;
+    $('#s-total').textContent = t; $('#s-known').textContent = k; $('#s-left').textContent = t - k;
+    $('#s-bar').style.width = (t ? Math.round(k / t * 100) : 0) + '%';
+    $('#tr-count').textContent = `${t - k} words waiting to be trained`;
+  }
+  function visible() {
+    return vocab.filter(v =>
+      (filter === 'all' || (filter === 'todo' ? !known.includes(v.word) : v.lesson === filter)) &&
+      (!query || (v.word + ' ' + v.def + ' ' + v.uk).toLowerCase().includes(query)));
+  }
+  function render() {
+    stats();
+    lEl.innerHTML = visible().map(v => {
+      const on = known.includes(v.word);
+      return `<div class="word-card">
+        <div style="display:flex;gap:12px;align-items:flex-start">
+          <div class="grow" style="flex:1">
+            <div class="w">${esc(v.word)}</div>
+            <div class="tr">${esc(v.def)}</div>
+            ${uk(v.uk)}
+            <div class="muted mono" style="font-size:12px;margin-top:4px">${esc(v.pos)} · ${esc(title(v.lesson))}</div>
+            <div class="ex">${esc(v.example)}</div>
+          </div>
+          <button class="btn btn-sm ${on ? 'btn-accent' : 'btn-ghost'}" data-w="${esc(v.word)}">${on ? '✓ known' : 'I know it'}</button>
+        </div></div>`;
+    }).join('') || '<p class="empty">Nothing found.</p>';
+  }
+  lEl.onclick = e => {
+    const b = e.target.closest('[data-w]'); if (!b) return;
+    const w = b.dataset.w;
+    known = known.includes(w) ? known.filter(x => x !== w) : [...known, w];
+    EW.set('vocab:known', known);
+    render();
+  };
+
+  /* ---------- trainer ---------- */
+  const tEl = $('#trainer');
+  const pool = () => { const p = vocab.filter(v => !known.includes(v.word)); return p.length ? p : vocab; };
+  const shuffle = a => a.map(x => [Math.random(), x]).sort((p, q) => p[0] - q[0]).map(x => x[1]);
+
+  $('#m-off').onclick = () => { tEl.innerHTML = ''; };
+  $('#m-flash').onclick = () => {
+    const deck = shuffle(pool()); let i = 0;
+    const draw = () => {
+      const v = deck[i % deck.length];
+      tEl.innerHTML = `<div class="flash" id="fc"><div class="flash-inner">
+          <div class="flash-face flash-front"><div><div class="big">${esc(v.word)}</div>
+            <div class="sm">${esc(v.pos)} · tap to flip</div></div></div>
+          <div class="flash-face flash-back"><div><div class="big" style="font-size:clamp(18px,4vw,24px)">${esc(v.def)}</div>
+            <div class="sm">${esc(v.example)}</div>
+            <div class="sm uk-tr" style="opacity:1;font-weight:700">${esc(v.uk)}</div></div></div></div></div>
+        <div class="toolbar" style="justify-content:center;margin-top:16px">
+          <button class="btn btn-ghost btn-sm" id="f-known">✓ I know this word</button>
+          <button class="btn btn-accent btn-sm" id="f-next">next →</button>
+          <span class="muted">${(i % deck.length) + 1} / ${deck.length}</span>
+        </div>`;
+      const fc = document.getElementById('fc');
+      fc.onclick = () => fc.classList.toggle('flipped');
+      document.getElementById('f-next').onclick = () => { i++; draw(); };
+      document.getElementById('f-known').onclick = () => {
+        if (!known.includes(v.word)) { known = [...known, v.word]; EW.set('vocab:known', known); render(); }
+        i++; draw();
+      };
+    };
+    draw();
+  };
+  $('#m-quiz').onclick = () => {
+    const deck = shuffle(pool()).slice(0, 10); let i = 0, score = 0;
+    const draw = () => {
+      if (i >= deck.length) {
+        EW.push('quiz', { area: 'vocabulary', score, total: deck.length });
+        tEl.innerHTML = `<div style="text-align:center;padding:20px">
+          <div class="stat" style="display:inline-block;min-width:200px">
+            <div class="n">${score}/${deck.length}</div><div class="l">correct answers</div></div>
+          <p class="muted" style="margin-top:14px">${score === deck.length ? 'Perfect! 🔥' : score >= deck.length * 0.7 ? 'Good — almost there 💪' : 'Worth another look — run the flashcards.'}</p>
+          <button class="btn btn-accent btn-sm" id="q-again">Try again</button></div>`;
+        document.getElementById('q-again').onclick = () => $('#m-quiz').click();
+        return;
+      }
+      const v = deck[i];
+      const wrongs = shuffle(vocab.filter(x => x.word !== v.word)).slice(0, 3).map(x => x.def);
+      const opts = shuffle([v.def, ...wrongs]);
+      tEl.innerHTML = `<p class="muted mono" style="margin:0 0 6px">Question ${i + 1} of ${deck.length} · score ${score}</p>
+        <p class="quiz-q" style="font-size:22px;font-family:var(--display)">${esc(v.word)}</p>
+        <div class="opts">${opts.map(o => `<button class="opt" data-o="${esc(o)}">${esc(o)}</button>`).join('')}</div>`;
+      tEl.querySelector('.opts').onclick = e => {
+        const b = e.target.closest('.opt'); if (!b) return;
+        if (b.dataset.o === v.def) score++;
+        tEl.querySelectorAll('.opt').forEach(x => {
+          x.disabled = true;
+          if (x.dataset.o === v.def) x.classList.add('correct');
+          else if (x === b) x.classList.add('wrong');
+        });
+        setTimeout(() => { i++; draw(); }, 900);
+      };
+    };
+    draw();
+  };
+
+  /* ---------- words the student captured themselves ---------- */
+  function renderMine() {
+    const mine = EW.get('vocab:mine', []);
+    const card = document.getElementById('mine-card');
+    card.hidden = mine.length === 0;
+    document.getElementById('mine-count').textContent =
+      mine.length ? `${mine.length} waiting for a meaning` : '';
+    document.getElementById('mine').innerHTML = mine.slice().reverse().map(w => `
+      <div class="row" style="align-items:flex-start">
+        <div class="grow">
+          <b style="font-family:var(--display);font-size:17px">${esc(w.word)}</b>
+          <div class="muted" style="font-size:13.5px;margin-top:2px">${esc(w.source || '')} · ${fmtDate(w.at)}</div>
+          ${w.context ? `<div class="ex" style="margin-top:6px">“${esc(w.context)}”</div>` : ''}
+        </div>
+        <button class="btn btn-ghost btn-sm" data-drop="${esc(w.word)}">remove</button>
+      </div>`).join('');
+  }
+  document.getElementById('mine').onclick = e => {
+    const b = e.target.closest('[data-drop]'); if (!b) return;
+    EW.set('vocab:mine', EW.get('vocab:mine', []).filter(x => x.word !== b.dataset.drop));
+    renderMine();
+  };
+  document.addEventListener('ew:words-changed', renderMine);
+  renderMine();
+
+  render();
+})();
+</script>
+</body>
+</html>

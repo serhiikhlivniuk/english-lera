@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" data-base="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="assets/app.css?v=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230E8F7E'/><text x='50' y='68' font-size='52' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'>EN</text></svg>">
+<title>Lessons · Lera's English</title>
+</head>
+<body>
+<main class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">Lessons</p>
+    <h1>Our lessons</h1>
+    <p class="lede">Each lesson opens as its own page, with all the tasks, videos and grammar. Everything you type into the tasks is saved.</p>
+  </div>
+  <div class="grid g2" id="list"></div>
+</main>
+<script src="assets/store.js?v=1"></script>
+<script src="assets/app.js?v=1"></script>
+<script src="assets/wordgrab.js?v=1"></script>
+<script>
+(async () => {
+  const lessons = (await EW.data('lessons')).sort((a, b) => b.number - a.number);
+  document.getElementById('list').innerHTML = lessons.map(l => {
+    const tags = l.topics.slice(0, 4).map(t => `<span class="tag t-cyan">${esc(t)}</span>`).join(' ');
+    const body = `
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+        <span class="tag t-violet">Lesson ${l.number}</span>
+        <span class="muted mono">${fmtDate(l.date)}</span>
+        <span class="tag t-amber">${esc(l.level)}</span>
+      </div>
+      <h2 style="margin:12px 0 4px">${esc(l.title)}</h2>
+      <p class="muted" style="margin:0 0 10px">${esc(l.titleUk)} · ${esc(l.duration)} · ${l.vocabCount} words</p>
+      <p style="margin:0 0 14px">${esc(l.summary)}</p>
+      <div class="chips" style="margin-bottom:6px">${tags}</div>`;
+    return l.file
+      ? `<a class="card" href="${esc(l.file)}">${body}<p style="margin:14px 0 0;color:var(--accent);font-weight:700">Open the lesson →</p></a>`
+      : `<div class="card">${body}<p class="muted" style="margin:14px 0 0">No worksheet page for this lesson yet</p></div>`;
+  }).join('');
+})();
+</script>
+</body>
+</html>

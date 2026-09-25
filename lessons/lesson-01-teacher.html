@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="uk" data-base="../">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Teacher plan for lesson 1.">
+<style>html{color-scheme:light dark}img{max-width:100%}[hidden]{display:none !important}</style>
+<title>Lesson 1 · Teacher plan · Lera's English</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Karla:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --paper:#F4F5F1; --surface:#FFFFFF; --surface-2:#EBEEE7;
+    --ink:#17233D; --ink-soft:#5B6479; --line:#D9DDD5;
+    --accent:#AD6A16; --accent-ink:#8A5310; --accent-soft:#F7E9D3;
+    --ok:#2C7A57; --ok-soft:#DEEDE4;
+    --bad:#AE372D; --bad-soft:#F7DFDB;
+    --shadow:0 1px 2px rgba(23,35,61,.06), 0 8px 24px -16px rgba(23,35,61,.28);
+    --display:"Fraunces", Georgia, "Times New Roman", serif;
+    --body:"Karla", "Helvetica Neue", Arial, sans-serif;
+    --mono:"IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#141A26; --surface:#1B2231; --surface-2:#232B3C;
+      --ink:#E9EBE5; --ink-soft:#9BA4B6; --line:#313B4E;
+      --accent:#E3A052; --accent-ink:#F0BB79; --accent-soft:#3A2D1B;
+      --ok:#74C79C; --ok-soft:#1D3A2B;
+      --bad:#E68678; --bad-soft:#3C221E;
+      --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.9);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#141A26; --surface:#1B2231; --surface-2:#232B3C;
+    --ink:#E9EBE5; --ink-soft:#9BA4B6; --line:#313B4E;
+    --accent:#E3A052; --accent-ink:#F0BB79; --accent-soft:#3A2D1B;
+    --ok:#74C79C; --ok-soft:#1D3A2B;
+    --bad:#E68678; --bad-soft:#3C221E;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.9);
+  }
+
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:var(--body); font-size:16px; line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:900px; margin:0 auto; padding-inline:20px; padding-block:0 64px}
+
+  header.top{border-bottom:1px solid var(--line); background:var(--paper); position:sticky; top:0; z-index:20}
+  .top-inner{max-width:900px; margin:0 auto; padding-inline:20px; padding-block:20px 0}
+  .eyebrow{font-family:var(--mono); font-size:11.5px; letter-spacing:.13em; text-transform:uppercase; color:var(--accent); margin:0 0 6px}
+  h1{font-family:var(--display); font-weight:600; font-size:clamp(28px,5.4vw,40px); line-height:1.08; margin:0 0 8px; text-wrap:balance; letter-spacing:-.015em}
+  .meta{display:flex; flex-wrap:wrap; gap:6px 14px; margin:0 0 16px; font-family:var(--mono); font-size:12px; color:var(--ink-soft)}
+  .meta span::before{content:"· "; color:var(--line)}
+  .meta span:first-child::before{content:""}
+  .tabs{display:flex; gap:2px; flex-wrap:wrap}
+  .tab{appearance:none; border:1px solid var(--line); border-bottom:none; background:transparent; font-family:var(--body); font-weight:700; font-size:14px; color:var(--ink-soft); padding:9px 16px; border-radius:8px 8px 0 0; cursor:pointer; margin-bottom:-1px}
+  .tab[aria-selected="true"]{background:var(--surface); color:var(--ink); border-color:var(--line)}
+  .tab:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible, textarea:focus-visible, a:focus-visible, summary:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+  h2{font-family:var(--display); font-weight:600; font-size:22px; line-height:1.2; margin:0 0 4px; letter-spacing:-.01em; text-wrap:balance}
+  h3{font-family:var(--body); font-weight:700; font-size:15px; margin:20px 0 6px}
+  p{margin:0 0 12px}
+  .lead{color:var(--ink-soft)}
+  .label{font-family:var(--mono); font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-soft)}
+  section.view[hidden]{display:none}
+  .intro{padding-block:28px 8px; border-bottom:1px solid var(--line); margin-bottom:8px}
+
+  .blockhead{display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; margin:34px 0 0; padding:14px 18px; background:var(--ink); color:var(--paper); border-radius:10px}
+  .blockhead h2{color:var(--paper); margin:0}
+  .blockhead .label{color:var(--paper); opacity:.7}
+
+  .stage{display:grid; grid-template-columns:96px 1fr; gap:0 24px; padding-block:24px; border-bottom:1px solid var(--line)}
+  .clock{font-family:var(--mono); font-size:12.5px; color:var(--ink-soft); padding-top:4px}
+  .clock b{display:block; font-size:15px; font-weight:600; color:var(--accent); letter-spacing:-.02em}
+  .stage-num{font-family:var(--mono); font-size:11px; letter-spacing:.12em; color:var(--ink-soft); display:block; margin-bottom:2px}
+  ul,ol{margin:0 0 12px; padding-left:20px}
+  li{margin-bottom:5px}
+  li::marker{color:var(--ink-soft)}
+  .q{color:var(--accent-ink); font-style:italic}
+  .note{background:var(--surface-2); border-left:3px solid var(--accent); padding:12px 14px; margin:14px 0; font-size:14.5px; border-radius:0 6px 6px 0}
+  .note .label{display:block; margin-bottom:4px}
+  table{width:100%; border-collapse:collapse; font-size:14.5px; margin:8px 0 14px}
+  th,td{text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top}
+  th{font-family:var(--mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-soft); font-weight:500}
+  .tbl-scroll{overflow-x:auto}
+  .aims{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:18px 20px; margin:20px 0}
+  .aims ul{margin-bottom:0}
+
+  .progress-bar{position:sticky; top:0; z-index:10; background:var(--paper); padding-block:14px 10px; border-bottom:1px solid var(--line); margin-bottom:4px; display:flex; align-items:center; gap:12px; flex-wrap:wrap}
+  .track{flex:1 1 160px; height:6px; background:var(--surface-2); border-radius:99px; overflow:hidden}
+  .fill{height:100%; width:0%; background:var(--accent); transition:width .35s ease}
+  .score{font-family:var(--mono); font-size:12.5px; color:var(--ink-soft); white-space:nowrap}
+  .ex{background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:20px 22px; margin:18px 0; box-shadow:var(--shadow)}
+  .ex.extra{border-style:dashed; border-color:var(--accent); box-shadow:none}
+  .ex-head{display:flex; align-items:baseline; gap:10px; margin-bottom:10px; flex-wrap:wrap}
+  .pill{font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; background:var(--accent-soft); color:var(--accent-ink); border-radius:99px; padding:3px 9px; font-weight:600}
+  .task{font-size:14.5px; color:var(--ink-soft); margin-bottom:14px}
+  .sort-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:8px}
+  .sort-row{display:flex; align-items:center; gap:8px; background:var(--surface-2); border-radius:8px; padding:6px 8px 6px 12px}
+  .sort-row span{flex:1; font-size:14.5px}
+  .def-list{display:grid; gap:8px}
+  .def-row{display:flex; align-items:center; gap:10px; background:var(--surface-2); border-radius:8px; padding:8px 10px 8px 13px; flex-wrap:wrap}
+  .def-row span{flex:1 1 220px; font-size:14.5px}
+  select, input[type="text"], textarea{font-family:var(--body); font-size:15px; color:var(--ink); background:var(--paper); border:1px solid var(--line); border-radius:6px; padding:6px 8px}
+  select{font-family:var(--mono); font-size:13px; padding:5px 6px; max-width:100%}
+  input[type="text"]{width:9.5em; background:transparent; border:none; border-bottom:2px solid var(--line); border-radius:0; padding:2px 4px}
+  input[type="text"].wide{width:13em}
+  textarea{width:100%; min-height:120px; line-height:1.6; resize:vertical}
+  .gap-list{list-style:none; padding:0; counter-reset:g}
+  .gap-list li{counter-increment:g; display:flex; gap:10px; align-items:baseline; padding:7px 0; border-bottom:1px dashed var(--line); flex-wrap:wrap}
+  .gap-list li:last-child{border-bottom:none}
+  .gap-list li::before{content:counter(g); font-family:var(--mono); font-size:12px; color:var(--ink-soft); min-width:1.2em}
+  .sentence{flex:1 1 240px}
+  .cue{font-family:var(--mono); font-size:12.5px; color:var(--accent-ink)}
+  .ok{border-color:var(--ok) !important; background:var(--ok-soft) !important}
+  .bad{border-color:var(--bad) !important; background:var(--bad-soft) !important}
+  input.ok, input.bad{background:transparent !important}
+  input.ok{border-bottom-color:var(--ok) !important; color:var(--ok)}
+  input.bad{border-bottom-color:var(--bad) !important; color:var(--bad)}
+  .choice{display:block; padding:8px 12px; border:1px solid var(--line); border-radius:8px; margin-bottom:6px; cursor:pointer; font-size:15px; background:var(--paper)}
+  .choice input{margin-right:8px; accent-color:var(--accent)}
+  .tf{display:flex; gap:8px; flex:0 0 auto}
+  .tf button{font-family:var(--mono); font-size:12px; letter-spacing:.06em; padding:5px 12px; border:1px solid var(--line); background:var(--paper); color:var(--ink-soft); border-radius:6px; cursor:pointer}
+  .tf button[aria-pressed="true"]{background:var(--accent-soft); border-color:var(--accent); color:var(--accent-ink); font-weight:600}
+  .btn{font-family:var(--body); font-weight:700; font-size:14px; cursor:pointer; background:var(--ink); color:var(--paper); border:1px solid var(--ink); border-radius:8px; padding:9px 18px}
+  .btn.ghost{background:transparent; color:var(--ink-soft); border-color:var(--line); font-weight:500}
+  .ex-foot{display:flex; gap:10px; align-items:center; margin-top:16px; flex-wrap:wrap}
+  .verdict{font-family:var(--mono); font-size:12.5px; color:var(--ink-soft)}
+  .verdict.good{color:var(--ok)}
+  .verdict.poor{color:var(--bad)}
+
+  .reading{background:var(--surface-2); border-radius:10px; padding:18px 20px; margin-bottom:16px; font-size:16px; line-height:1.78}
+  .reading p{margin:0 0 10px}
+  .reading p:last-child{margin:0}
+  .reading .gloss{border-bottom:1px dotted var(--accent); cursor:help}
+
+  .videocard{display:flex; gap:16px; align-items:flex-start; flex-wrap:wrap; background:var(--accent-soft); border:1px solid var(--accent); border-radius:12px; padding:18px 20px; margin:16px 0}
+  .videocard div{flex:1 1 240px}
+  .videocard h3{margin-top:0}
+  a{color:var(--accent-ink); text-decoration-thickness:1px; text-underline-offset:2px}
+  .playbtn{display:inline-block; font-family:var(--body); font-weight:700; font-size:14px; background:var(--ink); color:var(--paper); text-decoration:none; border-radius:8px; padding:10px 18px; white-space:nowrap}
+  .freq-scale{display:grid; grid-template-columns:repeat(auto-fit,minmax(88px,1fr)); gap:6px; margin:10px 0 14px}
+  .freq-scale div{background:var(--surface-2); border-radius:8px; padding:8px 10px; text-align:center}
+  .freq-scale b{display:block; font-size:14.5px}
+  .freq-scale small{font-family:var(--mono); font-size:11px; color:var(--ink-soft)}
+  .rule{border:1px dashed var(--accent); border-radius:10px; padding:14px 16px; margin:12px 0; background:var(--paper)}
+  .rule code, code{font-family:var(--mono); font-size:13.5px; background:var(--surface-2); padding:1px 5px; border-radius:4px}
+  details{border-top:1px solid var(--line); padding-top:12px; margin-top:14px}
+  summary{cursor:pointer; font-family:var(--mono); font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft)}
+  details[open] summary{margin-bottom:10px; color:var(--accent)}
+  footer{margin-top:40px; padding-top:20px; border-top:1px solid var(--line); font-size:13.5px; color:var(--ink-soft)}
+
+  .tense{background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:20px 22px; margin:18px 0; box-shadow:var(--shadow)}
+  .tense .form{font-family:var(--mono); font-size:14px; background:var(--surface-2); border-radius:8px; padding:12px 14px; margin:10px 0; line-height:1.9; overflow-x:auto}
+  .tense .form b{color:var(--accent-ink)}
+  .signals{display:flex; flex-wrap:wrap; gap:6px; margin:10px 0 4px}
+  .signals span{font-family:var(--mono); font-size:12px; background:var(--accent-soft); color:var(--accent-ink); border-radius:99px; padding:4px 10px}
+  .vs{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:12px 0}
+  .vs div{background:var(--surface-2); border-radius:8px; padding:12px 14px; font-size:14.5px}
+  .wrong{color:var(--bad)}
+  .right{color:var(--ok)}
+  .irr{font-family:var(--mono); font-size:13px}
+
+  .wordbank{display:flex; flex-wrap:wrap; gap:6px; margin:0 0 14px; padding:12px 14px; background:var(--surface-2); border-radius:8px}
+  .wordbank span{font-family:var(--mono); font-size:12.5px; background:var(--paper); border:1px solid var(--line); border-radius:99px; padding:3px 10px}
+  .stem{font-weight:700; margin:16px 0 6px}
+  .daytag{font-family:var(--mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--paper); background:var(--accent); border-radius:99px; padding:3px 10px; font-weight:600}
+  .clockface{font-family:var(--mono); font-size:15px; font-weight:600; color:var(--accent-ink); background:var(--accent-soft); border-radius:6px; padding:3px 9px; margin-right:6px}
+  @media (max-width:620px){
+    .stage{grid-template-columns:1fr; gap:8px}
+    .clock{display:flex; gap:10px; align-items:baseline; padding-top:0}
+    .clock b{display:inline}
+    .ex,.tense{padding:16px 15px}
+    .vs{grid-template-columns:1fr}
+  }
+  @media (prefers-reduced-motion: reduce){*{transition:none !important; animation:none !important}}
+  @media print{header.top{position:static} .progress-bar{display:none} .btn{display:none} section.view[hidden]{display:block !important} details{display:block} details summary{display:none}}
+</style>
+
+<style>
+  .gref{display:grid;gap:10px;margin:12px 0 16px}
+  .gbox{border:1px solid var(--line,#D9DDD5);border-radius:14px;background:var(--surface-2,#EBEEE7);overflow:hidden}
+  .gbox>summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+    padding:9px 14px;font-family:var(--body,system-ui,sans-serif);font-size:13.5px;font-weight:700;
+    color:var(--accent,#AD6A16)}
+  .gbox>summary::-webkit-details-marker{display:none}
+  .gbox>summary::before{content:"\1F4D8"}
+  .gbox>summary::after{content:"show the rule";margin-left:auto;font-weight:500;opacity:.7;font-size:12.5px}
+  .gbox[open]>summary::after{content:"hide"}
+  .gbox>summary:hover{background:rgba(0,0,0,.03)}
+  .gbox-body{padding:2px 16px 16px;font-size:14.5px}
+  .gbox-body .g-rule{border-left:3px solid var(--accent,#AD6A16);padding:2px 0 2px 14px;margin:0 0 14px}
+  .gbox-body h4{margin:0 0 4px;font-size:14px}
+  .gbox-body .g-form{display:inline-block;font-family:var(--mono,monospace);font-size:13px;font-weight:600;
+    background:var(--accent-soft,#F7E9D3);color:var(--accent-ink,#8A5310);padding:4px 10px;border-radius:8px;
+    margin:2px 0 6px;white-space:pre-wrap}
+  .gbox-body .g-when{margin:0 0 6px;opacity:.78}
+  .gbox-body .g-ex{margin:3px 0}
+  .gbox-body .g-bad{color:#AE372D;text-decoration:line-through}
+  .gbox-body .g-good{color:#2C7A57;font-weight:600}
+  .gbox-body .g-mis{display:grid;gap:2px;margin:0 0 8px;font-size:13.5px}
+  .gbox-body .g-more{display:inline-block;margin-top:6px;font-size:13px;font-weight:600}
+  @media print{.gbox{break-inside:avoid} .gbox>summary::after{display:none}}
+</style>
+</head>
+<body>
+<style>
+.ew-back{position:sticky;top:0;z-index:99;display:flex;gap:12px;align-items:center;flex-wrap:wrap;
+  padding:10px 20px;background:linear-gradient(135deg,#6C4CF1,#FF4D8D);color:#fff;
+  font-family:"Inter",system-ui,sans-serif;font-size:14px;font-weight:600}
+.ew-back a{color:#fff;text-decoration:none;background:rgba(255,255,255,.2);padding:6px 13px;border-radius:999px}
+.ew-back a:hover{background:rgba(255,255,255,.34)}
+@media print{.ew-back{display:none}}
+</style>
+<div class="ew-back">
+  <a href="../teacher.html">&larr; Teacher view</a>
+  <span>Lesson 1 &middot; Teacher plan</span>
+  <a href="lesson-01.html" style="margin-left:auto">Open the worksheet</a>
+</div>
+<header class="top"><div class="top-inner" style="padding-bottom:18px">
+  <p class="eyebrow">Lesson 1 · План для вчителя</p>
+  <h1>All About Me</h1>
+  <p class="meta"><span>Lera · 11 клас · підготовка до НМТ</span><span>60 хв онлайн</span><span>реальний рівень ≈ A1+</span></p>
+</div></header>
+<main class="wrap">
+<div class="aims">
+<span class="label">Цілі уроку</span>
+<ul>
+<li>Познайомитися і зняти страх: показати, що англійська «підйомна».</li>
+<li>Діагностика: 10 питань покажуть, які теми A1–A2 є, а яких немає.</li>
+<li>Закласти фундамент НМТ-граматики: to be, Present Simple (+ − ?), he/she/it -s, прислівники частотності.</li>
+<li>Перше знайомство з форматом НМТ (Use of English, A–D).</li>
+</ul>
+</div>
+<div class="note"><span class="label">Головне</span>Урок перевантажений навмисно: пунктирні вправи (12–15) — запасні або домашка. Якщо темп низький, краще менше вправ, але кожну — до «зеленого».</div>
+<div class="blockhead"><span class="label">60 хв</span><h2>Хід уроку</h2></div>
+<div class="stage"><div class="clock"><b>0–5</b>хв</div><div><span class="stage-num">Знайомство</span><h2>Warm-up · Nice to meet you!</h2><p>Учениця заповнює 7 речень про себе і читає вголос, потім ставить тобі питання з блоку «Questions for your teacher». Не виправляй — лише слухай, як вона будує речення.</p><p class="q">Що помітити: чи вживає am/is/are, чи ставить -s після she, як швидко складає речення.</p></div></div>
+<div class="stage"><div class="clock"><b>5–12</b>хв</div><div><span class="stage-num">Діагностика</span><h2>Level check (10 питань)</h2><p>Без підказок і без правил. Питання йдуть від A1 до A2: 1–3 to be / Present Simple, 4 Past Simple, 5 множина, 6 артиклі, 7 порівняння, 8 Present Continuous, 9 there is/are, 10 can.</p><p class="q">Результат видно на teacher.html у блоці «Answers in lesson worksheets». Що не так — вже план наступних уроків.</p></div></div>
+<div class="stage"><div class="clock"><b>12–20</b>хв</div><div><span class="stage-num">Лексика</span><h2>Exercises 1–2</h2><p>20 слів — розпорядок дня і слова для розповіді про себе. Ex 1 разом, Ex 2 — сама, потім перевірка.</p><p class="q">Якщо повільно: Ex 2 перенести в домашку.</p></div></div>
+<div class="stage"><div class="clock"><b>20–25</b>хв</div><div><span class="stage-num">to be</span><h2>Exercise 3</h2><p>Перед вправою — 1 хвилина на правило (вкладка Grammar, блок 01). Обовʼязково проговорити пастку «I have 16 years».</p></div></div>
+<div class="stage"><div class="clock"><b>25–40</b>хв</div><div><span class="stage-num">Present Simple</span><h2>Exercises 4–7 — ядро уроку</h2><p>Ex 4 правопис -s/-es/-ies → Ex 5 стверджувальні → Ex 6 заперечення → Ex 7 питання. Між вправами — одне речення «на слух»: ти кажеш підмет, вона — дієслово.</p><p class="q">Критерій успіху: 8 з 10 у Ex 5 без підказки. Якщо менше — Ex 7 скоротити до 1–8, Ex 8 на наступний урок.</p></div></div>
+<div class="stage"><div class="clock"><b>40–44</b>хв</div><div><span class="stage-num">Частотність</span><h2>Exercise 8</h2><p>Шкала always → never, потім вибір порядку слів. Попроси 2 речення про себе з usually і never.</p></div></div>
+<div class="stage"><div class="clock"><b>44–52</b>хв</div><div><span class="stage-num">Читання + НМТ</span><h2>Exercises 9–10</h2><p>Ex 9 — короткий текст і True/False. Ex 10 — перше завдання у форматі НМТ (A–D). Покажи стратегію з блоку «How to do this kind of task»: підмет + маркер часу.</p><p class="q">Мета — не бали, а відчуття «я це можу». Похвали навіть за 4/6.</p></div></div>
+<div class="stage"><div class="clock"><b>52–58</b>хв</div><div><span class="stage-num">Говоріння</span><h2>Exercise 11</h2><p>1–2 хвилини про свій день, потім про когось із родини (he/she + -s). Запиши 3–4 помилки і розбери наприкінці.</p></div></div>
+<div class="stage"><div class="clock"><b>58–60</b>хв</div><div><span class="stage-num">Домашка</span><h2>Homework</h2><p>Ex 15 (текст 50–70 слів), слова, квізи в Grammar. Ex 12–14 — як запасні в класі або вдома.</p></div></div>
+<div class="blockhead"><span class="label">далі</span><h2>Що робити після уроку</h2></div>
+<ul style="margin-top:16px">
+<li>Подивитися відповіді Level check на teacher.html і записати провальні теми.</li>
+<li>Наступні уроки за логікою НМТ-граматики: Present Continuous → Past Simple → артиклі й множина → порівняння → Future / going to.</li>
+<li>Кожен урок — одне завдання у форматі НМТ, поступово складніше.</li>
+</ul>
+</main>
+</body>
+</html>

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "lesson-01",
+    "number": 1,
+    "title": "All About Me",
+    "titleUk": "Знайомство, розпорядок дня і Present Simple",
+    "date": "2026-09-25",
+    "level": "A1+ → A2",
+    "duration": "60 min",
+    "file": "lessons/lesson-01.html",
+    "summary": "Getting to know each other, a quick level check, daily routine words and the base of the NMT grammar: to be, Present Simple (positive, negative, questions) and adverbs of frequency. Plus your first NMT-style task.",
+    "topics": [
+      "Speaking: about me",
+      "Level check",
+      "Daily routine",
+      "to be",
+      "Present Simple",
+      "Adverbs of frequency",
+      "NMT-style task"
+    ],
+    "vocabCount": 20
+  }
+]
