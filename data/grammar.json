@@ -213,7 +213,8 @@
     "level": "A1–A2",
     "summary": "Habits, timetables, facts and things that are generally true.",
     "lessons": [
-      "lesson-01"
+      "lesson-01",
+      "lesson-02"
     ],
     "rules": [
       {
@@ -817,7 +818,8 @@
     "level": "A2",
     "summary": "Where to put always, usually, often and never — and why that position is not random.",
     "lessons": [
-      "lesson-01"
+      "lesson-01",
+      "lesson-02"
     ],
     "rules": [
       {
@@ -999,6 +1001,650 @@
         ],
         "answer": 0,
         "why": "never is already negative — no second negative."
+      }
+    ]
+  },
+  {
+    "id": "present-continuous",
+    "group": "Tenses",
+    "title": "Present Continuous",
+    "uk": "am / is / are + -ing",
+    "level": "A1–A2",
+    "summary": "Things happening right now, around now, or only for a short time.",
+    "lessons": [
+      "lesson-02"
+    ],
+    "rules": [
+      {
+        "name": "Form",
+        "form": "I am + V-ing · he / she / it is + V-ing · you / we / they are + V-ing",
+        "when": "Both parts are needed: am / is / are AND the -ing verb.",
+        "examples": [
+          {
+            "en": "I'm doing my homework now.",
+            "uk": "Я зараз роблю домашку."
+          },
+          {
+            "en": "My mum is cooking dinner.",
+            "uk": "Мама готує вечерю."
+          }
+        ]
+      },
+      {
+        "name": "Negatives and questions",
+        "form": "I'm not · she isn't · they aren't + V-ing  ·  Am / Is / Are + subject + V-ing?",
+        "when": "No do / does here — to be does all the work.",
+        "examples": [
+          {
+            "en": "He isn't listening.",
+            "uk": "Він не слухає."
+          },
+          {
+            "en": "Are you watching TV? — No, I'm not.",
+            "uk": "Ти дивишся телевізор? — Ні."
+          }
+        ]
+      },
+      {
+        "name": "Time words",
+        "form": "now · right now · at the moment · today · this week · Look! · Listen!",
+        "when": "These words usually tell you to choose the Present Continuous.",
+        "examples": [
+          {
+            "en": "Look! It's snowing.",
+            "uk": "Дивись! Іде сніг."
+          },
+          {
+            "en": "This week she is staying with her grandma.",
+            "uk": "Цього тижня вона живе в бабусі."
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "She cooking now.",
+        "right": "She is cooking now.",
+        "note": "is cannot be skipped"
+      },
+      {
+        "wrong": "I am work now.",
+        "right": "I am working now.",
+        "note": "am needs -ing after it"
+      },
+      {
+        "wrong": "Do you listening?",
+        "right": "Are you listening?",
+        "note": "no do in the Present Continuous"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "Be quiet! The baby ___.",
+        "options": [
+          "sleeps",
+          "is sleeping",
+          "sleeping"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "We ___ for the bus at the moment.",
+        "options": [
+          "are waiting",
+          "waiting",
+          "wait"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "___ your brother playing football now?",
+        "options": [
+          "Does",
+          "Is",
+          "Do"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "I ___ TV right now — I'm reading.",
+        "options": [
+          "don't watch",
+          "am not watching",
+          "not watching"
+        ],
+        "answer": 1
+      }
+    ],
+    "practice": [
+      {
+        "q": "Look! My cat ___ on your bag.",
+        "options": [
+          "sits",
+          "is sitting",
+          "sitting"
+        ],
+        "answer": 1,
+        "why": "Look! = it is happening now → is + sitting."
+      },
+      {
+        "q": "I ___ to music right now.",
+        "options": [
+          "'m listening",
+          "listen",
+          "'m listen"
+        ],
+        "answer": 0,
+        "why": "right now → am + V-ing: I'm listening."
+      },
+      {
+        "q": "They ___ dinner at the moment.",
+        "options": [
+          "are having",
+          "having",
+          "has"
+        ],
+        "answer": 0,
+        "why": "they → are, plus the -ing form."
+      },
+      {
+        "q": "She ___ a red dress today.",
+        "options": [
+          "wears",
+          "is wearing",
+          "wearing"
+        ],
+        "answer": 1,
+        "why": "today, a temporary situation → is wearing."
+      },
+      {
+        "q": "We ___ the test now. Please wait.",
+        "options": [
+          "finish",
+          "are finishing",
+          "finishing"
+        ],
+        "answer": 1,
+        "why": "now → are + finishing. finishing alone has no verb to be."
+      },
+      {
+        "q": "___ you listening to me?",
+        "options": [
+          "Do",
+          "Are",
+          "Is"
+        ],
+        "answer": 1,
+        "why": "Questions: Are + you + V-ing. No do."
+      },
+      {
+        "q": "He ___ now — he's at school.",
+        "options": [
+          "isn't sleeping",
+          "doesn't sleeping",
+          "not sleeping"
+        ],
+        "answer": 0,
+        "why": "Negative: isn't + V-ing."
+      },
+      {
+        "q": "Is it raining? — Yes, it ___.",
+        "options": [
+          "does",
+          "is",
+          "raining"
+        ],
+        "answer": 1,
+        "why": "Short answers repeat the verb to be: Yes, it is."
+      },
+      {
+        "q": "What ___ you doing?",
+        "options": [
+          "do",
+          "are",
+          "is"
+        ],
+        "answer": 1,
+        "why": "What + are + you + doing?"
+      },
+      {
+        "q": "Choose the correct sentence.",
+        "options": [
+          "She is study now.",
+          "She studying now.",
+          "She is studying now."
+        ],
+        "answer": 2,
+        "why": "You need both parts: is + studying."
+      }
+    ]
+  },
+  {
+    "id": "ing-spelling",
+    "group": "Tenses",
+    "title": "Spelling: -ing",
+    "uk": "make → making, swim → swimming",
+    "level": "A1",
+    "summary": "Three small rules for adding -ing.",
+    "lessons": [
+      "lesson-02"
+    ],
+    "rules": [
+      {
+        "name": "Most verbs",
+        "form": "V + -ing",
+        "when": "Just add -ing.",
+        "examples": [
+          {
+            "en": "play → playing, read → reading",
+            "uk": ""
+          }
+        ]
+      },
+      {
+        "name": "Silent -e",
+        "form": "-e → -ing",
+        "when": "Drop the e at the end.",
+        "examples": [
+          {
+            "en": "make → making, write → writing, dance → dancing",
+            "uk": ""
+          }
+        ]
+      },
+      {
+        "name": "Short verbs: vowel + consonant",
+        "form": "double the last letter",
+        "when": "One vowel + one consonant at the end of a short verb.",
+        "examples": [
+          {
+            "en": "swim → swimming, sit → sitting, get → getting, run → running",
+            "uk": ""
+          }
+        ]
+      },
+      {
+        "name": "-ie",
+        "form": "-ie → -ying",
+        "when": "A small group of verbs.",
+        "examples": [
+          {
+            "en": "lie → lying, die → dying",
+            "uk": ""
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "writeing",
+        "right": "writing",
+        "note": "drop the -e"
+      },
+      {
+        "wrong": "swiming",
+        "right": "swimming",
+        "note": "double the m"
+      },
+      {
+        "wrong": "studing",
+        "right": "studying",
+        "note": "keep the y before -ing"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "make →",
+        "options": [
+          "makeing",
+          "making",
+          "makking"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "sit →",
+        "options": [
+          "siting",
+          "sitting",
+          "sitteing"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "study →",
+        "options": [
+          "studing",
+          "studiing",
+          "studying"
+        ],
+        "answer": 2
+      }
+    ],
+    "practice": [
+      {
+        "q": "dance →",
+        "options": [
+          "danceing",
+          "dancing",
+          "danccing"
+        ],
+        "answer": 1,
+        "why": "Silent -e: drop it → dancing."
+      },
+      {
+        "q": "run →",
+        "options": [
+          "runing",
+          "running",
+          "runeing"
+        ],
+        "answer": 1,
+        "why": "Short verb, one vowel + one consonant → double n."
+      },
+      {
+        "q": "play →",
+        "options": [
+          "playing",
+          "plaing",
+          "playying"
+        ],
+        "answer": 0,
+        "why": "y after a vowel stays: playing."
+      },
+      {
+        "q": "lie →",
+        "options": [
+          "lieing",
+          "liing",
+          "lying"
+        ],
+        "answer": 2,
+        "why": "-ie → -ying."
+      },
+      {
+        "q": "write →",
+        "options": [
+          "writting",
+          "writing",
+          "writeing"
+        ],
+        "answer": 1,
+        "why": "Drop the -e. Only one t: writing."
+      },
+      {
+        "q": "swim →",
+        "options": [
+          "swimming",
+          "swiming",
+          "swimeing"
+        ],
+        "answer": 0,
+        "why": "Short verb ending in vowel + m → double m."
+      },
+      {
+        "q": "read →",
+        "options": [
+          "readding",
+          "reading",
+          "readeing"
+        ],
+        "answer": 1,
+        "why": "Two vowels (ea) before d → just add -ing."
+      },
+      {
+        "q": "get →",
+        "options": [
+          "geting",
+          "getting",
+          "getteing"
+        ],
+        "answer": 1,
+        "why": "Short verb, vowel + t → double t."
+      },
+      {
+        "q": "study →",
+        "options": [
+          "studying",
+          "studing",
+          "studiing"
+        ],
+        "answer": 0,
+        "why": "y stays before -ing (it changes only before -s: studies)."
+      },
+      {
+        "q": "have →",
+        "options": [
+          "haveing",
+          "having",
+          "havving"
+        ],
+        "answer": 1,
+        "why": "Silent -e: drop it → having."
+      }
+    ]
+  },
+  {
+    "id": "simple-vs-continuous",
+    "group": "Tenses",
+    "title": "Present Simple or Present Continuous?",
+    "uk": "every day чи right now",
+    "level": "A2",
+    "summary": "The most common choice in NMT grammar tasks: a habit or something happening now?",
+    "lessons": [
+      "lesson-02"
+    ],
+    "rules": [
+      {
+        "name": "Present Simple = always / usually",
+        "form": "habits · routines · facts · timetables",
+        "when": "Time words: every day, usually, often, never, on Mondays.",
+        "examples": [
+          {
+            "en": "My dad usually drinks tea.",
+            "uk": "Тато зазвичай пʼє чай."
+          },
+          {
+            "en": "She works in a bank.",
+            "uk": "Вона працює в банку."
+          }
+        ]
+      },
+      {
+        "name": "Present Continuous = now / for a short time",
+        "form": "now · at the moment · today · this week · Look!",
+        "when": "Something in progress, or a temporary situation.",
+        "examples": [
+          {
+            "en": "Today he is drinking coffee.",
+            "uk": "Сьогодні він пʼє каву."
+          },
+          {
+            "en": "She is working from home this week.",
+            "uk": "Цього тижня вона працює з дому."
+          }
+        ]
+      },
+      {
+        "name": "State verbs: no -ing",
+        "form": "like · love · hate · want · know · understand · need · believe · have (= own)",
+        "when": "These verbs describe feelings, thoughts and possession, not actions — use the Present Simple even with now.",
+        "examples": [
+          {
+            "en": "I know the answer now.",
+            "uk": "Тепер я знаю відповідь."
+          },
+          {
+            "en": "She wants a new phone.",
+            "uk": "Вона хоче новий телефон."
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "I am knowing him.",
+        "right": "I know him.",
+        "note": "know is a state verb"
+      },
+      {
+        "wrong": "Look! He plays football.",
+        "right": "Look! He is playing football.",
+        "note": "Look! = now"
+      },
+      {
+        "wrong": "She is going to the gym every day.",
+        "right": "She goes to the gym every day.",
+        "note": "every day = habit"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "My sister ___ to school by bus every day.",
+        "options": [
+          "is going",
+          "goes",
+          "go"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "Shh! I ___ to the news.",
+        "options": [
+          "listen",
+          "am listening",
+          "listens"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "I ___ what you mean.",
+        "options": [
+          "understand",
+          "am understanding",
+          "understanding"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "This week my parents ___ in Lviv.",
+        "options": [
+          "stay",
+          "are staying",
+          "stays"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "He ___ coffee — he prefers tea.",
+        "options": [
+          "isn't liking",
+          "doesn't like",
+          "don't like"
+        ],
+        "answer": 1
+      }
+    ],
+    "practice": [
+      {
+        "q": "Water ___ at 100 °C.",
+        "options": [
+          "boils",
+          "is boiling",
+          "boil"
+        ],
+        "answer": 0,
+        "why": "A fact → Present Simple."
+      },
+      {
+        "q": "Hurry up! The film ___.",
+        "options": [
+          "starts",
+          "is starting",
+          "start"
+        ],
+        "answer": 1,
+        "why": "Hurry up! — it is happening now → is starting."
+      },
+      {
+        "q": "I usually ___ jeans, but today I ___ a dress.",
+        "options": [
+          "wear / am wearing",
+          "am wearing / wear",
+          "wear / wear"
+        ],
+        "answer": 0,
+        "why": "usually → Simple; today → Continuous."
+      },
+      {
+        "q": "She ___ a lot of friends.",
+        "options": [
+          "is having",
+          "has",
+          "have"
+        ],
+        "answer": 1,
+        "why": "have = own is a state verb → has."
+      },
+      {
+        "q": "What ___ now?",
+        "options": [
+          "do you do",
+          "are you doing",
+          "you are doing"
+        ],
+        "answer": 1,
+        "why": "now → Present Continuous question: are you doing."
+      },
+      {
+        "q": "What ___? — I'm a student.",
+        "options": [
+          "do you do",
+          "are you doing",
+          "you do"
+        ],
+        "answer": 0,
+        "why": "What do you do? = What is your job? (always, not now)."
+      },
+      {
+        "q": "I ___ you are right.",
+        "options": [
+          "am thinking",
+          "think",
+          "thinks"
+        ],
+        "answer": 1,
+        "why": "think = believe → state verb, Present Simple."
+      },
+      {
+        "q": "My brother ___ for his exams this month.",
+        "options": [
+          "studies",
+          "is studying",
+          "study"
+        ],
+        "answer": 1,
+        "why": "this month, temporary → is studying."
+      },
+      {
+        "q": "We ___ to the sea every summer.",
+        "options": [
+          "go",
+          "are going",
+          "goes"
+        ],
+        "answer": 0,
+        "why": "every summer → habit → go."
+      },
+      {
+        "q": "Listen! Somebody ___ at the door.",
+        "options": [
+          "knocks",
+          "is knocking",
+          "knock"
+        ],
+        "answer": 1,
+        "why": "Listen! = now → is knocking."
       }
     ]
   }

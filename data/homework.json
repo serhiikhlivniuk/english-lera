@@ -1,9 +1,44 @@
 [
   {
+    "id": "hw-02",
+    "lesson": "lesson-02",
+    "title": "Homework after Lesson 2",
+    "assigned": "2026-10-09",
+    "due": "2026-10-16",
+    "note": "Do everything on the site, not in your notebook — then I can see your answers and help with the mistakes.",
+    "items": [
+      {
+        "id": "hw-02-1",
+        "text": "Exercise 13: write 60–80 words about someone you know — on the lesson page.",
+        "type": "writing"
+      },
+      {
+        "id": "hw-02-2",
+        "text": "Learn the 20 words from Lesson 2 — use the flashcards in the Vocabulary section.",
+        "type": "vocab"
+      },
+      {
+        "id": "hw-02-3",
+        "text": "Grammar section: take the quizzes on Present Continuous, -ing spelling and Present Simple or Present Continuous?",
+        "type": "grammar"
+      },
+      {
+        "id": "hw-02-4",
+        "text": "Finish Exercises 11 and 12 on the lesson page if you did not do them in class.",
+        "type": "grammar"
+      },
+      {
+        "id": "hw-02-5",
+        "text": "Lesson 1: open it and check Exercises 13, 14 and 15. If they are empty, do them on the page.",
+        "type": "writing"
+      }
+    ]
+  },
+  {
     "id": "hw-01",
     "lesson": "lesson-01",
     "title": "Homework after Lesson 1",
-    "assigned": "2026-09-29",
+    "assigned": "2026-09-25",
     "due": "2026-10-02",
     "note": "Do a little every day instead of everything on the last evening. The grammar quizzes take 5 minutes each.",
     "items": [

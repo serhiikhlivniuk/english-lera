@@ -42,5 +42,48 @@
       "Tell me about one person in your family: what does he or she do every day?"
     ],
     "teacher": "Не виправляй під час розповіді — запиши 3–4 помилки (особливо he/she без -s і I am + verb) і розбери їх наприкінці. Це вхідний урок: головне, щоб вона говорила, навіть короткими реченнями."
+  },
+  {
+    "id": "sp-02",
+    "lesson": "lesson-02",
+    "title": "People in my life",
+    "minutes": 8,
+    "level": "A2",
+    "goal": "Describe a person's appearance and character, say what they usually do and what they are doing in a photo.",
+    "grammar": [
+      "present-continuous",
+      "simple-vs-continuous",
+      "present-simple"
+    ],
+    "warmup": [
+      "Who do you look like in your family?",
+      "Who do you get on with best? Why?",
+      "Are you more shy or more talkative?"
+    ],
+    "main": {
+      "task": "Show or describe a photo of someone in your family or a friend.",
+      "howto": "One or two minutes. Two words for appearance, two for character, one sentence about their routine (Present Simple) and two about the photo (Present Continuous).",
+      "prompts": [
+        "Who is this? How old is he / she?",
+        "What does he / she look like?",
+        "What is he / she like?",
+        "What does he / she usually do at the weekend?",
+        "Where are they in the photo? What are they doing? What is he / she wearing?"
+      ]
+    },
+    "phrases": [
+      "This is my…",
+      "He / She has long / short, curly / straight … hair.",
+      "He / She is very… but a bit…",
+      "He / She usually…",
+      "In this photo he / she is …-ing",
+      "I take after… / I look like…"
+    ],
+    "followup": [
+      "Who do you take after — your mum or your dad?",
+      "What is your best friend doing right now, do you think?",
+      "Describe your English teacher in three words!"
+    ],
+    "teacher": "Слухай дві речі: чи не губить is/are у Continuous (she reading) і чи не ставить Continuous на звички (she is going every day). Запиши 3–4 помилки, розбери в кінці. Якщо фото немає — опис по памʼяті."
   }
 ]

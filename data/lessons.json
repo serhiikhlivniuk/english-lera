@@ -4,7 +4,7 @@
     "number": 1,
     "title": "All About Me",
     "titleUk": "Знайомство, розпорядок дня і Present Simple",
-    "date": "2026-09-29",
+    "date": "2026-09-25",
     "level": "A1+ → A2",
     "duration": "60 min",
     "file": "lessons/lesson-01.html",
@@ -16,6 +16,27 @@
       "to be",
       "Present Simple",
       "Adverbs of frequency",
+      "NMT-style task"
+    ],
+    "vocabCount": 20
+  },
+  {
+    "id": "lesson-02",
+    "number": 2,
+    "title": "People Around Me",
+    "titleUk": "Зовнішність, характер і Present Continuous",
+    "date": "2026-10-09",
+    "level": "A2",
+    "duration": "60 min",
+    "file": "lessons/lesson-02.html",
+    "summary": "How to describe people — what they look like and what they are like — and the Present Continuous for things happening right now. Then the key NMT choice: Present Simple or Present Continuous? Plus state verbs and an NMT-style task.",
+    "topics": [
+      "Appearance",
+      "Character",
+      "Present Continuous",
+      "-ing spelling",
+      "Simple or Continuous?",
+      "State verbs",
       "NMT-style task"
     ],
     "vocabCount": 20

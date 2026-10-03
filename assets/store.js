@@ -42,7 +42,9 @@ const EW = (() => {
   function set(key, value) {
     setLocal(key, value);
     setLocal(key + ':ts', Date.now());
-    push('progress', { key, value });
+    // never push before we know what the database already has: a page that
+    // skipped hydrate() used to overwrite newer progress from another device
+    if (sb || !cfg) hydrate().then(() => push('progress', { key, value: get(key, value) }));
     return value;
   }
 
@@ -51,6 +53,7 @@ const EW = (() => {
     if (!sb) return null;
     try {
       const r = await fetch(`${sb.url}/rest/v1/${path}`, {
+        keepalive: true,   // let the last save finish even if the tab is closing
         ...opts,
         headers: {
           apikey: sb.key,
@@ -82,11 +85,39 @@ const EW = (() => {
   const connected = () => !!sb;
   const read = (table, query = '') => sbFetch(`${table}?${query}`);
 
+  /* ---------- merge two versions of one key (older, newer) ----------
+     arrays → union without duplicates · lesson answers → field by field ·
+     plain objects (hw:done, scores) → key by key · anything else → newer  */
+  const isObj = v => v && typeof v === 'object' && !Array.isArray(v);
+  function merge(older, newer) {
+    if (Array.isArray(older) && Array.isArray(newer)) return dedupe([...older, ...newer]);
+    if (isObj(older) && isObj(newer)) {
+      if (isObj(older.answers) || isObj(newer.answers)) {
+        const answers = { ...(older.answers || {}), ...(newer.answers || {}) };
+        // old format stored radios as `true`; a real value from either side beats it
+        for (const k of Object.keys(answers)) {
+          if (answers[k] === true && typeof (older.answers || {})[k] === 'string') answers[k] = older.answers[k];
+        }
+        return { ...older, ...newer, answers, filled: Object.keys(answers).length };
+      }
+      return { ...older, ...newer };
+    }
+    return newer;
+  }
+  function dedupe(list) {
+    const seen = new Set();
+    return list.filter(x => {
+      const k = typeof x === 'object' ? JSON.stringify(x && x.word !== undefined ? [String(x.word).toLowerCase(), x.at] : x) : String(x);
+      if (seen.has(k)) return false;
+      seen.add(k); return true;
+    });
+  }
+
   /* ---------- hydrate: pull the student's progress back down ----------
      Without this, progress only travels one way: a student who opens the
      site on another device (or clears their browser) sees an empty page
-     while the database knows better. Newest write wins per key; word lists
-     are merged, because "known" is only ever added to.                    */
+     while the database knows better. Both sides are merged (see merge()),
+     so one device can never wipe what another device saved.            */
   let hydrated = null;
   function hydrate() {
     if (hydrated) return hydrated;
@@ -105,17 +136,18 @@ const EW = (() => {
         const localVal = get(r.key, null);
         const localTs = get(r.key + ':ts', 0);
         const remoteTs = Date.parse(r.updated_at) || 0;
-        if (Array.isArray(r.value) && Array.isArray(localVal)) {
-          const merged = [...new Set([...localVal, ...r.value])];
-          setLocal(r.key, merged);
-          setLocal(r.key + ':ts', Math.max(localTs, remoteTs));
-          if (merged.length > r.value.length) push('progress', { key: r.key, value: merged });
-        } else if (localVal === null || remoteTs > localTs) {
-          setLocal(r.key, r.value);
+        if (localVal === null) {
+          const v = Array.isArray(r.value) ? dedupe(r.value) : r.value;
+          setLocal(r.key, v);
           setLocal(r.key + ':ts', remoteTs);
-        } else if (localTs > remoteTs) {
-          push('progress', { key: r.key, value: localVal });
+          if (v !== r.value && v.length !== r.value.length) push('progress', { key: r.key, value: v });
+          continue;
         }
+        // merge instead of "newest wins": two devices must never wipe each other's answers
+        const merged = localTs > remoteTs ? merge(r.value, localVal) : merge(localVal, r.value);
+        setLocal(r.key, merged);
+        setLocal(r.key + ':ts', Math.max(localTs, remoteTs));
+        if (JSON.stringify(merged) !== JSON.stringify(r.value)) push('progress', { key: r.key, value: merged });
       }
       return true;
     })();
@@ -148,5 +180,5 @@ const EW = (() => {
     return `in ${pl(mins, 'minute')}`;
   }
 
-  return { BASE, data, config, get, set, push, connected, read, hydrate, nextLesson, humanUntil };
+  return { BASE, data, config, get, set, push, connected, read, hydrate, merge, dedupe, nextLesson, humanUntil };
 })();

@@ -221,5 +221,225 @@
     "tags": [
       "frequency"
     ]
+  },
+  {
+    "word": "tall",
+    "pos": "adjective",
+    "def": "higher than most people",
+    "uk": "високий (про людину)",
+    "example": "My brother is very tall — almost two metres.",
+    "lesson": "lesson-02",
+    "tags": [
+      "appearance"
+    ]
+  },
+  {
+    "word": "slim",
+    "pos": "adjective",
+    "def": "thin in a nice, healthy way",
+    "uk": "стрункий",
+    "example": "She is slim and has long dark hair.",
+    "lesson": "lesson-02",
+    "tags": [
+      "appearance"
+    ]
+  },
+  {
+    "word": "curly",
+    "pos": "adjective",
+    "def": "(of hair) with a lot of round curls",
+    "uk": "кучерявий",
+    "example": "My cousin has short curly hair.",
+    "lesson": "lesson-02",
+    "tags": [
+      "appearance"
+    ]
+  },
+  {
+    "word": "straight",
+    "pos": "adjective",
+    "def": "(of hair) with no curls or waves",
+    "uk": "прямий (про волосся)",
+    "example": "Her hair is long and straight.",
+    "lesson": "lesson-02",
+    "tags": [
+      "appearance"
+    ]
+  },
+  {
+    "word": "fair",
+    "pos": "adjective",
+    "def": "(of hair or skin) light in colour",
+    "uk": "світлий (про волосся)",
+    "example": "Both of my sisters have fair hair.",
+    "lesson": "lesson-02",
+    "tags": [
+      "appearance"
+    ]
+  },
+  {
+    "word": "beard",
+    "pos": "noun",
+    "def": "hair that grows on a man's chin and cheeks",
+    "uk": "борода",
+    "example": "My dad has a short grey beard.",
+    "lesson": "lesson-02",
+    "tags": [
+      "appearance"
+    ]
+  },
+  {
+    "word": "wear glasses",
+    "pos": "phrase",
+    "def": "to have glasses on your eyes, usually every day",
+    "uk": "носити окуляри",
+    "example": "My grandpa wears glasses for reading.",
+    "lesson": "lesson-02",
+    "tags": [
+      "appearance"
+    ]
+  },
+  {
+    "word": "look like",
+    "pos": "phrasal verb",
+    "def": "to be similar to someone in appearance",
+    "uk": "бути схожим на (зовні)",
+    "example": "Everybody says I look like my mum.",
+    "lesson": "lesson-02",
+    "tags": [
+      "appearance"
+    ]
+  },
+  {
+    "word": "take after",
+    "pos": "phrasal verb",
+    "def": "to look or behave like an older person in your family",
+    "uk": "бути схожим на (батьків, родичів)",
+    "example": "She takes after her dad — they are both very calm.",
+    "lesson": "lesson-02",
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "word": "get on with",
+    "pos": "phrasal verb",
+    "def": "to have a friendly relationship with someone",
+    "uk": "ладнати з кимось",
+    "example": "I get on well with my sister.",
+    "lesson": "lesson-02",
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "word": "kind",
+    "pos": "adjective",
+    "def": "caring and helpful to other people",
+    "uk": "добрий",
+    "example": "My grandma is very kind — she always helps everyone.",
+    "lesson": "lesson-02",
+    "tags": [
+      "character"
+    ]
+  },
+  {
+    "word": "honest",
+    "pos": "adjective",
+    "def": "always telling the truth",
+    "uk": "чесний",
+    "example": "He never tells lies. He's an honest person.",
+    "lesson": "lesson-02",
+    "tags": [
+      "character"
+    ]
+  },
+  {
+    "word": "funny",
+    "pos": "adjective",
+    "def": "making people laugh",
+    "uk": "смішний, веселий",
+    "example": "My friend tells great jokes. She's really funny.",
+    "lesson": "lesson-02",
+    "tags": [
+      "character"
+    ]
+  },
+  {
+    "word": "shy",
+    "pos": "adjective",
+    "def": "nervous about talking to people you don't know",
+    "uk": "сором'язливий",
+    "example": "My little brother is shy with new people.",
+    "lesson": "lesson-02",
+    "tags": [
+      "character"
+    ]
+  },
+  {
+    "word": "friendly",
+    "pos": "adjective",
+    "def": "nice and pleasant to other people",
+    "uk": "привітний, дружній",
+    "example": "Our new neighbours are very friendly.",
+    "lesson": "lesson-02",
+    "tags": [
+      "character"
+    ]
+  },
+  {
+    "word": "lazy",
+    "pos": "adjective",
+    "def": "not wanting to work or do anything",
+    "uk": "лінивий",
+    "example": "He's so lazy — he never helps at home.",
+    "lesson": "lesson-02",
+    "tags": [
+      "character"
+    ]
+  },
+  {
+    "word": "hard-working",
+    "pos": "adjective",
+    "def": "working a lot and very seriously",
+    "uk": "працьовитий",
+    "example": "My mum is very hard-working.",
+    "lesson": "lesson-02",
+    "tags": [
+      "character"
+    ]
+  },
+  {
+    "word": "confident",
+    "pos": "adjective",
+    "def": "sure of yourself and your abilities",
+    "uk": "впевнений у собі",
+    "example": "She is confident when she speaks in public.",
+    "lesson": "lesson-02",
+    "tags": [
+      "character"
+    ]
+  },
+  {
+    "word": "talkative",
+    "pos": "adjective",
+    "def": "liking to talk a lot",
+    "uk": "балакучий",
+    "example": "My aunt is so talkative — she can talk for hours!",
+    "lesson": "lesson-02",
+    "tags": [
+      "character"
+    ]
+  },
+  {
+    "word": "patient",
+    "pos": "adjective",
+    "def": "able to wait or explain again without getting angry",
+    "uk": "терплячий",
+    "example": "Our teacher is very patient.",
+    "lesson": "lesson-02",
+    "tags": [
+      "character"
+    ]
   }
 ]
