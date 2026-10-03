@@ -6,14 +6,7 @@
     "url": "https://meet.google.com/uun-jdnb-upz",
     "note": "Same link for every lesson — just click it at the right time.",
     "timezone": "Europe/Kyiv",
-    "schedule": [
-      {
-        "dayIndex": 5,
-        "day": "Friday",
-        "time": "16:00",
-        "duration": 60
-      }
-    ]
+    "schedule": []
   },
   "supabase": {
     "url": "https://jukpfkhkosnslqmzolxo.supabase.co",
