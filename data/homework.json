@@ -1,10 +1,40 @@
 [
   {
+    "id": "hw-03",
+    "lesson": "lesson-03",
+    "title": "Homework after Lesson 3",
+    "assigned": "2026-10-09",
+    "due": "2026-10-16",
+    "note": "First try every task without «Show answers» — your mistakes show me what to explain next time.",
+    "items": [
+      {
+        "id": "hw-03-1",
+        "text": "Exercise 13: write 70–90 words «My usual week — and this week» on the lesson page.",
+        "type": "writing"
+      },
+      {
+        "id": "hw-03-2",
+        "text": "Grammar section: take the quizzes «Present Simple or Present Continuous?» and «Present tenses for the future».",
+        "type": "grammar"
+      },
+      {
+        "id": "hw-03-3",
+        "text": "Vocabulary: do the quiz until you get at least 8 / 10, and learn the 10 new words from Lesson 3.",
+        "type": "vocab"
+      },
+      {
+        "id": "hw-03-4",
+        "text": "Finish Exercises 11 and 12 on the lesson page if you did not do them in class.",
+        "type": "grammar"
+      }
+    ]
+  },
+  {
     "id": "hw-02",
     "lesson": "lesson-02",
     "title": "Homework after Lesson 2",
-    "assigned": "2026-10-09",
-    "due": "2026-10-16",
+    "assigned": "2026-10-03",
+    "due": "2026-10-09",
     "note": "Do everything on the site, not in your notebook — then I can see your answers and help with the mistakes.",
     "items": [
       {

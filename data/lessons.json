@@ -25,7 +25,7 @@
     "number": 2,
     "title": "People Around Me",
     "titleUk": "Зовнішність, характер і Present Continuous",
-    "date": "2026-10-09",
+    "date": "2026-10-03",
     "level": "A2",
     "duration": "60 min",
     "file": "lessons/lesson-02.html",
@@ -40,5 +40,25 @@
       "NMT-style task"
     ],
     "vocabCount": 20
+  },
+  {
+    "id": "lesson-03",
+    "number": 3,
+    "title": "Usually or Right Now?",
+    "titleUk": "Present Simple чи Present Continuous — коли який час",
+    "date": "2026-10-09",
+    "level": "A2",
+    "duration": "60 min",
+    "file": "lessons/lesson-03.html",
+    "summary": "A review lesson built on your answers from Lessons 1 and 2. Nine reasons to choose the Present Simple or the Present Continuous, verbs with two meanings, present tenses for the future and a longer NMT-style task. Plus words for school and exams.",
+    "topics": [
+      "Simple or Continuous?",
+      "Nine uses",
+      "State verbs",
+      "Present for the future",
+      "School and exams",
+      "NMT-style task"
+    ],
+    "vocabCount": 10
   }
 ]

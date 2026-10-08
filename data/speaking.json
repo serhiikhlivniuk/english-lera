@@ -85,5 +85,48 @@
       "Describe your English teacher in three words!"
     ],
     "teacher": "Слухай дві речі: чи не губить is/are у Continuous (she reading) і чи не ставить Continuous на звички (she is going every day). Запиши 3–4 помилки, розбери в кінці. Якщо фото немає — опис по памʼяті."
+  },
+  {
+    "id": "sp-03",
+    "lesson": "lesson-03",
+    "title": "Usually — but this week…",
+    "minutes": 8,
+    "level": "A2",
+    "goal": "Talk about your usual life and about this week in pairs of sentences: Present Simple for habits, Present Continuous for now, temporary situations and plans.",
+    "grammar": [
+      "simple-vs-continuous",
+      "present-for-future",
+      "present-continuous"
+    ],
+    "warmup": [
+      "What do you usually do on Friday evenings?",
+      "What are you doing this weekend?",
+      "Which subject are you revising at the moment?"
+    ],
+    "main": {
+      "task": "Compare your usual week with this week.",
+      "howto": "Two minutes. Every idea in a pair: «I usually…, but this week I'm…». At least one plan for the weekend and one thing that is getting better.",
+      "prompts": [
+        "What time do you usually get up? Are you getting up earlier these days?",
+        "Which subject do you like most? What are you studying now?",
+        "What do you usually do in the evening? What are you watching or reading these days?",
+        "What are you doing this weekend?",
+        "What is getting better in your English?"
+      ]
+    },
+    "phrases": [
+      "I usually…, but this week I'm…",
+      "At the moment I'm…",
+      "These days I'm…",
+      "On Saturday I'm …-ing",
+      "My … is getting better.",
+      "I don't usually…, but today…"
+    ],
+    "followup": [
+      "What do you do? vs What are you doing? — answer both!",
+      "What is changing in your town or village?",
+      "What does your best friend usually do at the weekend? And this weekend?"
+    ],
+    "teacher": "Слухай два типи помилок: Continuous на звичку (she is going every day) і Simple на «зараз / цього тижня». Не перебивай — запиши 3–4 речення і в кінці попроси її саму пояснити, чому той чи інший час (за алгоритмом із вкладки Grammar)."
   }
 ]

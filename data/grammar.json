@@ -214,7 +214,8 @@
     "summary": "Habits, timetables, facts and things that are generally true.",
     "lessons": [
       "lesson-01",
-      "lesson-02"
+      "lesson-02",
+      "lesson-03"
     ],
     "rules": [
       {
@@ -1012,7 +1013,8 @@
     "level": "A1–A2",
     "summary": "Things happening right now, around now, or only for a short time.",
     "lessons": [
-      "lesson-02"
+      "lesson-02",
+      "lesson-03"
     ],
     "rules": [
       {
@@ -1432,7 +1434,8 @@
     "level": "A2",
     "summary": "The most common choice in NMT grammar tasks: a habit or something happening now?",
     "lessons": [
-      "lesson-02"
+      "lesson-02",
+      "lesson-03"
     ],
     "rules": [
       {
@@ -1645,6 +1648,192 @@
         ],
         "answer": 1,
         "why": "Listen! = now → is knocking."
+      }
+    ]
+  },
+  {
+    "id": "present-for-future",
+    "group": "Tenses",
+    "title": "Present tenses for the future",
+    "uk": "I'm meeting… · the train leaves…",
+    "level": "A2",
+    "summary": "Two present tenses can talk about the future: the Continuous for personal plans, the Simple for timetables.",
+    "lessons": [
+      "lesson-03"
+    ],
+    "rules": [
+      {
+        "name": "Arrangements → Present Continuous",
+        "form": "am / is / are + V-ing + future time",
+        "when": "A plan you have already arranged: with a person, a time, tickets.",
+        "examples": [
+          {
+            "en": "I'm meeting Anna on Friday.",
+            "uk": "У пʼятницю я зустрічаюся з Анною."
+          },
+          {
+            "en": "We're having a test tomorrow.",
+            "uk": "Завтра в нас контрольна."
+          }
+        ]
+      },
+      {
+        "name": "Timetables → Present Simple",
+        "form": "V / V-s + future time",
+        "when": "Official times: trains, buses, lessons, films, exams.",
+        "examples": [
+          {
+            "en": "The train leaves at 6:40 tomorrow.",
+            "uk": "Потяг відправляється завтра о 6:40."
+          },
+          {
+            "en": "The NMT starts at 9 a.m.",
+            "uk": "НМТ починається о 9-й ранку."
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "I meet my friends tonight.",
+        "right": "I'm meeting my friends tonight.",
+        "note": "a personal plan → Continuous"
+      },
+      {
+        "wrong": "What do you do on Saturday?",
+        "right": "What are you doing on Saturday?",
+        "note": "asking about plans"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "I ___ my grandma tomorrow — we arranged it yesterday.",
+        "options": [
+          "visit",
+          "am visiting",
+          "visits"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "The bus ___ at 7:10 every morning.",
+        "options": [
+          "leaves",
+          "is leaving",
+          "leave"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "What ___ tonight?",
+        "options": [
+          "do you do",
+          "are you doing",
+          "you doing"
+        ],
+        "answer": 1
+      }
+    ],
+    "practice": [
+      {
+        "q": "We ___ a party on Saturday. Do you want to come?",
+        "options": [
+          "have",
+          "are having",
+          "has"
+        ],
+        "answer": 1,
+        "why": "A plan that is already arranged → are having."
+      },
+      {
+        "q": "Our lessons ___ at half past eight on weekdays.",
+        "options": [
+          "start",
+          "are starting",
+          "starts"
+        ],
+        "answer": 0,
+        "why": "A school timetable → Present Simple; lessons = they → start."
+      },
+      {
+        "q": "I can't meet on Friday — I ___ to the dentist.",
+        "options": [
+          "go",
+          "am going",
+          "goes"
+        ],
+        "answer": 1,
+        "why": "An appointment you have made → Present Continuous."
+      },
+      {
+        "q": "She ___ Kyiv next week — she already has the tickets.",
+        "options": [
+          "leave",
+          "is leaving",
+          "leaving"
+        ],
+        "answer": 1,
+        "why": "Tickets = an arrangement → is leaving."
+      },
+      {
+        "q": "Choose the sentence about a plan for tonight.",
+        "options": [
+          "I meet friends tonight.",
+          "I'm meeting friends tonight.",
+          "I meeting friends tonight."
+        ],
+        "answer": 1,
+        "why": "Personal plans → am + meeting."
+      },
+      {
+        "q": "My train ___ at 6:40 tomorrow. It's in the timetable.",
+        "options": [
+          "leaves",
+          "leave",
+          "leaving"
+        ],
+        "answer": 0,
+        "why": "A timetable → Present Simple; the train = it → leaves."
+      },
+      {
+        "q": "What ___ on Saturday? — I'm going to the cinema.",
+        "options": [
+          "do you do",
+          "are you doing",
+          "you do"
+        ],
+        "answer": 1,
+        "why": "The answer is a plan, so the question is Continuous."
+      },
+      {
+        "q": "The film ___ at 8 p.m., so let's meet at 7:30.",
+        "options": [
+          "starts",
+          "start",
+          "starting"
+        ],
+        "answer": 0,
+        "why": "Cinema times are a timetable → starts."
+      },
+      {
+        "q": "«I meet Anna on Fridays» means…",
+        "options": [
+          "every Friday",
+          "this Friday only",
+          "right now"
+        ],
+        "answer": 0,
+        "why": "Present Simple + on Fridays = a habit."
+      },
+      {
+        "q": "«I'm meeting Anna on Friday» means…",
+        "options": [
+          "every Friday",
+          "a plan for this Friday",
+          "right now"
+        ],
+        "answer": 1,
+        "why": "Present Continuous + a future day = an arrangement."
       }
     ]
   }

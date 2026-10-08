@@ -441,5 +441,115 @@
     "tags": [
       "character"
     ]
+  },
+  {
+    "word": "timetable",
+    "pos": "noun",
+    "def": "a list of times when lessons, trains or buses happen",
+    "uk": "розклад",
+    "example": "Look at the timetable — we have maths at nine.",
+    "lesson": "lesson-03",
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "subject",
+    "pos": "noun",
+    "def": "something you study at school, like history or maths",
+    "uk": "шкільний предмет",
+    "example": "History is my favourite subject.",
+    "lesson": "lesson-03",
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "revise",
+    "pos": "verb",
+    "def": "to study again what you learned, before an exam",
+    "uk": "повторювати (до іспиту)",
+    "example": "I'm revising for the NMT this month.",
+    "lesson": "lesson-03",
+    "tags": [
+      "exams"
+    ]
+  },
+  {
+    "word": "take an exam",
+    "pos": "phrase",
+    "def": "to sit and do an exam",
+    "uk": "складати іспит",
+    "example": "Most students take the NMT in June.",
+    "lesson": "lesson-03",
+    "tags": [
+      "exams"
+    ]
+  },
+  {
+    "word": "pass",
+    "pos": "verb",
+    "def": "to be successful in an exam or test",
+    "uk": "скласти (успішно)",
+    "example": "You need 100 points to pass this test.",
+    "lesson": "lesson-03",
+    "tags": [
+      "exams"
+    ]
+  },
+  {
+    "word": "fail",
+    "pos": "verb",
+    "def": "not to be successful in an exam or test",
+    "uk": "провалити, не скласти",
+    "example": "He never studies, so he often fails his tests.",
+    "lesson": "lesson-03",
+    "tags": [
+      "exams"
+    ]
+  },
+  {
+    "word": "mark",
+    "pos": "noun",
+    "def": "a number or letter that shows how good your work is",
+    "uk": "оцінка",
+    "example": "She got the best mark in the class.",
+    "lesson": "lesson-03",
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "improve",
+    "pos": "verb",
+    "def": "to get better, or to make something better",
+    "uk": "покращувати(ся)",
+    "example": "My English is improving every week.",
+    "lesson": "lesson-03",
+    "tags": [
+      "exams"
+    ]
+  },
+  {
+    "word": "competition",
+    "pos": "noun",
+    "def": "an event where people try to win",
+    "uk": "змагання, конкурс",
+    "example": "Our school is organising a drawing competition.",
+    "lesson": "lesson-03",
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "clever",
+    "pos": "adjective",
+    "def": "quick at learning and understanding",
+    "uk": "розумний, кмітливий",
+    "example": "Marta is very clever — she understands everything fast.",
+    "lesson": "lesson-03",
+    "tags": [
+      "character"
+    ]
   }
 ]
