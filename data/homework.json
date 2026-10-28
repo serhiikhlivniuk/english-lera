@@ -1,5 +1,40 @@
 [
   {
+    "id": "hw-04",
+    "lesson": "lesson-04",
+    "title": "Homework after Lesson 4",
+    "assigned": "2026-10-28",
+    "due": "2026-11-04",
+    "note": "Try every task without «Show answers» first. If you open the answers, press «Hide answers» and try again.",
+    "items": [
+      {
+        "id": "hw-04-1",
+        "text": "Exercise 13: write 70–90 words about your last weekend — on the lesson page.",
+        "type": "writing"
+      },
+      {
+        "id": "hw-04-2",
+        "text": "Learn the 12 irregular verbs from Exercise 4 and the 10 weekend phrases from Exercise 1.",
+        "type": "vocab"
+      },
+      {
+        "id": "hw-04-3",
+        "text": "Grammar section: take the quizzes «Past Simple: was / were» and «Past Simple: regular and irregular verbs».",
+        "type": "grammar"
+      },
+      {
+        "id": "hw-04-4",
+        "text": "Finish Exercises 11 and 12 on the lesson page if you did not do them in class.",
+        "type": "grammar"
+      },
+      {
+        "id": "hw-04-5",
+        "text": "Lesson 3: write the text in Exercise 13 («My usual week — and this week») — it is still empty.",
+        "type": "writing"
+      }
+    ]
+  },
+  {
     "id": "hw-03",
     "lesson": "lesson-03",
     "title": "Homework after Lesson 3",

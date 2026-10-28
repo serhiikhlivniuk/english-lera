@@ -1435,7 +1435,8 @@
     "summary": "The most common choice in NMT grammar tasks: a habit or something happening now?",
     "lessons": [
       "lesson-02",
-      "lesson-03"
+      "lesson-03",
+      "lesson-04"
     ],
     "rules": [
       {
@@ -1659,7 +1660,8 @@
     "level": "A2",
     "summary": "Two present tenses can talk about the future: the Continuous for personal plans, the Simple for timetables.",
     "lessons": [
-      "lesson-03"
+      "lesson-03",
+      "lesson-04"
     ],
     "rules": [
       {
@@ -1834,6 +1836,404 @@
         ],
         "answer": 1,
         "why": "Present Continuous + a future day = an arrangement."
+      }
+    ]
+  },
+  {
+    "id": "past-simple-be",
+    "group": "Tenses",
+    "title": "Past Simple: was / were",
+    "uk": "був / була / були",
+    "level": "A1",
+    "summary": "The past of am / is / are. Like the present, it needs no did.",
+    "lessons": [
+      "lesson-04"
+    ],
+    "rules": [
+      {
+        "name": "Positive",
+        "form": "I / he / she / it was · you / we / they were",
+        "when": "Where you were, how you felt, what something was like.",
+        "examples": [
+          {
+            "en": "I was at home last Saturday.",
+            "uk": "Минулої суботи я була вдома."
+          },
+          {
+            "en": "The film was boring.",
+            "uk": "Фільм був нудний."
+          }
+        ]
+      },
+      {
+        "name": "Negatives and questions",
+        "form": "wasn't · weren't  ·  Was she …? · Were you …?",
+        "when": "Add not, or put was / were before the subject. No did!",
+        "examples": [
+          {
+            "en": "We weren't at school on Monday.",
+            "uk": "У понеділок нас не було в школі."
+          },
+          {
+            "en": "Were you tired? — Yes, I was.",
+            "uk": "Ти втомилася? — Так."
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "We was at home.",
+        "right": "We were at home.",
+        "note": "we → were"
+      },
+      {
+        "wrong": "Did you be tired?",
+        "right": "Were you tired?",
+        "note": "no did with was / were"
+      },
+      {
+        "wrong": "Yesterday I am tired.",
+        "right": "Yesterday I was tired.",
+        "note": "yesterday → past"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "My parents ___ at work yesterday.",
+        "options": [
+          "was",
+          "were",
+          "are"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "___ the party good?",
+        "options": [
+          "Did",
+          "Was",
+          "Were"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "I ___ at school on Monday — I was ill.",
+        "options": [
+          "wasn't",
+          "weren't",
+          "didn't"
+        ],
+        "answer": 0
+      }
+    ],
+    "practice": [
+      {
+        "q": "It ___ cold last weekend.",
+        "options": [
+          "was",
+          "were",
+          "is"
+        ],
+        "answer": 0,
+        "why": "last weekend → past; it → was."
+      },
+      {
+        "q": "We ___ very hungry after school.",
+        "options": [
+          "was",
+          "were",
+          "did"
+        ],
+        "answer": 1,
+        "why": "we → were."
+      },
+      {
+        "q": "Where ___ you yesterday evening?",
+        "options": [
+          "was",
+          "did",
+          "were"
+        ],
+        "answer": 2,
+        "why": "you → were. No did with to be."
+      },
+      {
+        "q": "The test ___ difficult, it was easy!",
+        "options": [
+          "wasn't",
+          "weren't",
+          "didn't"
+        ],
+        "answer": 0,
+        "why": "the test = it → wasn't."
+      },
+      {
+        "q": "___ your friends at the party?",
+        "options": [
+          "Was",
+          "Were",
+          "Did"
+        ],
+        "answer": 1,
+        "why": "friends = they → Were."
+      },
+      {
+        "q": "Was she at home? — No, she ___.",
+        "options": [
+          "didn't",
+          "weren't",
+          "wasn't"
+        ],
+        "answer": 2,
+        "why": "Short answer repeats the verb: wasn't."
+      },
+      {
+        "q": "I ___ born in 2010.",
+        "options": [
+          "am",
+          "was",
+          "were"
+        ],
+        "answer": 1,
+        "why": "be born is always past for a date: I was born."
+      },
+      {
+        "q": "Two years ago they ___ in Lviv.",
+        "options": [
+          "were",
+          "are",
+          "was"
+        ],
+        "answer": 0,
+        "why": "ago → past; they → were."
+      },
+      {
+        "q": "Choose the correct sentence.",
+        "options": [
+          "Did you be at home?",
+          "Were you at home?",
+          "Was you at home?"
+        ],
+        "answer": 1,
+        "why": "you → were, and no did."
+      },
+      {
+        "q": "The shops ___ open on Sunday.",
+        "options": [
+          "weren't",
+          "wasn't",
+          "didn't"
+        ],
+        "answer": 0,
+        "why": "shops = they → weren't."
+      }
+    ]
+  },
+  {
+    "id": "past-simple",
+    "group": "Tenses",
+    "title": "Past Simple: regular and irregular verbs",
+    "uk": "worked · went · did you…?",
+    "level": "A2",
+    "summary": "Finished actions in the past: yesterday, last weekend, two days ago, in 2023.",
+    "lessons": [
+      "lesson-04"
+    ],
+    "rules": [
+      {
+        "name": "Regular verbs",
+        "form": "V + -ed (the same for all persons)",
+        "when": "work → worked · stop → stopped · study → studied · like → liked",
+        "examples": [
+          {
+            "en": "I tidied my room on Sunday.",
+            "uk": "У неділю я прибрала кімнату."
+          }
+        ]
+      },
+      {
+        "name": "Irregular verbs",
+        "form": "go → went · have → had · see → saw · do → did",
+        "when": "Learn them by heart — the most common verbs are irregular.",
+        "examples": [
+          {
+            "en": "We went to the cinema last night.",
+            "uk": "Учора ввечері ми ходили в кіно."
+          }
+        ]
+      },
+      {
+        "name": "Negatives and questions",
+        "form": "didn't + V  ·  Did + subject + V?",
+        "when": "After did the verb goes back to its base form: no -ed, no went.",
+        "examples": [
+          {
+            "en": "She didn't go to the party.",
+            "uk": "Вона не пішла на вечірку."
+          },
+          {
+            "en": "Did you see the film? — Yes, I did.",
+            "uk": "Ти бачила фільм? — Так."
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "I goed home.",
+        "right": "I went home.",
+        "note": "go is irregular"
+      },
+      {
+        "wrong": "She didn't went.",
+        "right": "She didn't go.",
+        "note": "after didn't → base form"
+      },
+      {
+        "wrong": "Did you saw it?",
+        "right": "Did you see it?",
+        "note": "after did → base form"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "Last Saturday we ___ our grandma.",
+        "options": [
+          "visit",
+          "visited",
+          "visiting"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "I ___ a new phone two days ago.",
+        "options": [
+          "buyed",
+          "bought",
+          "buy"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "She didn't ___ her homework.",
+        "options": [
+          "did",
+          "do",
+          "does"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "___ you see the match yesterday?",
+        "options": [
+          "Did",
+          "Were",
+          "Do"
+        ],
+        "answer": 0
+      }
+    ],
+    "practice": [
+      {
+        "q": "Yesterday I ___ until ten.",
+        "options": [
+          "sleeped",
+          "slept",
+          "sleep"
+        ],
+        "answer": 1,
+        "why": "sleep is irregular: slept."
+      },
+      {
+        "q": "We ___ football after school.",
+        "options": [
+          "played",
+          "plaied",
+          "playd"
+        ],
+        "answer": 0,
+        "why": "vowel + y → just add -ed: played."
+      },
+      {
+        "q": "She ___ for the test all evening.",
+        "options": [
+          "studyed",
+          "studied",
+          "studed"
+        ],
+        "answer": 1,
+        "why": "consonant + y → -ied: studied."
+      },
+      {
+        "q": "The bus ___ suddenly.",
+        "options": [
+          "stoped",
+          "stopped",
+          "stopt"
+        ],
+        "answer": 1,
+        "why": "short verb, vowel + consonant → double: stopped."
+      },
+      {
+        "q": "I ___ to the party — I was ill.",
+        "options": [
+          "didn't go",
+          "didn't went",
+          "not went"
+        ],
+        "answer": 0,
+        "why": "didn't + base form: didn't go."
+      },
+      {
+        "q": "What ___ at the weekend?",
+        "options": [
+          "you did",
+          "did you do",
+          "did you did"
+        ],
+        "answer": 1,
+        "why": "What + did + you + do (base form)."
+      },
+      {
+        "q": "Did she call you? — No, she ___.",
+        "options": [
+          "didn't",
+          "wasn't",
+          "doesn't"
+        ],
+        "answer": 0,
+        "why": "Short answer with did: No, she didn't."
+      },
+      {
+        "q": "My dad ___ dinner last night.",
+        "options": [
+          "maked",
+          "made",
+          "make"
+        ],
+        "answer": 1,
+        "why": "make is irregular: made."
+      },
+      {
+        "q": "Two weeks ago we ___ a great film.",
+        "options": [
+          "saw",
+          "seed",
+          "see"
+        ],
+        "answer": 0,
+        "why": "see is irregular: saw."
+      },
+      {
+        "q": "Choose the correct sentence.",
+        "options": [
+          "Did you went out?",
+          "Did you go out?",
+          "Do you went out?"
+        ],
+        "answer": 1,
+        "why": "Did + subject + base form."
       }
     ]
   }

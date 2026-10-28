@@ -128,5 +128,48 @@
       "What does your best friend usually do at the weekend? And this weekend?"
     ],
     "teacher": "Слухай два типи помилок: Continuous на звичку (she is going every day) і Simple на «зараз / цього тижня». Не перебивай — запиши 3–4 речення і в кінці попроси її саму пояснити, чому той чи інший час (за алгоритмом із вкладки Grammar)."
+  },
+  {
+    "id": "sp-04",
+    "lesson": "lesson-04",
+    "title": "My last weekend",
+    "minutes": 8,
+    "level": "A2",
+    "goal": "Tell the story of your last weekend in the Past Simple and compare it with what you usually do.",
+    "grammar": [
+      "past-simple",
+      "past-simple-be",
+      "simple-vs-continuous"
+    ],
+    "warmup": [
+      "What did you have for breakfast today?",
+      "What time did you go to bed yesterday?",
+      "Where were you on Sunday afternoon?"
+    ],
+    "main": {
+      "task": "Tell your teacher about your last weekend.",
+      "howto": "One or two minutes, in time order: Saturday morning → evening → Sunday. At least five verbs in the Past Simple and one sentence with was / were.",
+      "prompts": [
+        "What time did you get up on Saturday?",
+        "What did you do in the afternoon?",
+        "Did you go out or stay in?",
+        "Who did you meet up with?",
+        "What was the best moment of the weekend?"
+      ]
+    },
+    "phrases": [
+      "On Saturday I…",
+      "After that we…",
+      "In the evening…",
+      "It was…",
+      "I didn't…",
+      "Usually I…, but last weekend I…"
+    ],
+    "followup": [
+      "What do you usually do at the weekend?",
+      "What are you doing next weekend?",
+      "What did you do last summer?"
+    ],
+    "teacher": "Слухай три речі: неправильні дієслова (goed, buyed), форму після didn't (didn't went) і чи не зісковзує в Present (Yesterday I go). Запиши 3–4 речення і в кінці попроси її саму виправити."
   }
 ]

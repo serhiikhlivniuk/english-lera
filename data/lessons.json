@@ -60,5 +60,25 @@
       "NMT-style task"
     ],
     "vocabCount": 10
+  },
+  {
+    "id": "lesson-04",
+    "number": 4,
+    "title": "My Weekend",
+    "titleUk": "Вихідні і Past Simple",
+    "date": "2026-10-28",
+    "level": "A2",
+    "duration": "60 min",
+    "file": "lessons/lesson-04.html",
+    "summary": "A warm-up on the present tenses, then the Past Simple: was / were, regular verbs with -ed and the top 12 irregular verbs. Usually, now or yesterday — three tenses side by side, and an NMT-style task with mixed tenses.",
+    "topics": [
+      "Review: present tenses",
+      "Past Simple",
+      "was / were",
+      "Irregular verbs",
+      "Weekend activities",
+      "NMT-style task"
+    ],
+    "vocabCount": 10
   }
 ]

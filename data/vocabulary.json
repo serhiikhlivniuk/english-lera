@@ -551,5 +551,115 @@
     "tags": [
       "character"
     ]
+  },
+  {
+    "word": "have a lie-in",
+    "pos": "phrase",
+    "def": "to stay in bed later than usual in the morning",
+    "uk": "довше поспати зранку",
+    "example": "On Sunday I had a lie-in until eleven.",
+    "lesson": "lesson-04",
+    "tags": [
+      "weekend"
+    ]
+  },
+  {
+    "word": "stay in",
+    "pos": "phrasal verb",
+    "def": "to stay at home and not go out",
+    "uk": "залишатися вдома",
+    "example": "It was raining, so we stayed in.",
+    "lesson": "lesson-04",
+    "tags": [
+      "weekend"
+    ]
+  },
+  {
+    "word": "go out",
+    "pos": "phrasal verb",
+    "def": "to leave your home to have fun",
+    "uk": "кудись піти розважитися",
+    "example": "We went out for pizza on Friday.",
+    "lesson": "lesson-04",
+    "tags": [
+      "weekend"
+    ]
+  },
+  {
+    "word": "meet up with",
+    "pos": "phrasal verb",
+    "def": "to meet friends because you planned it",
+    "uk": "зустрітися з (друзями)",
+    "example": "I met up with my friends in the park.",
+    "lesson": "lesson-04",
+    "tags": [
+      "weekend"
+    ]
+  },
+  {
+    "word": "tidy my room",
+    "pos": "phrase",
+    "def": "to put things in their places in your room",
+    "uk": "прибрати кімнату",
+    "example": "Mum asked me to tidy my room.",
+    "lesson": "lesson-04",
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "visit relatives",
+    "pos": "phrase",
+    "def": "to go and see people in your family",
+    "uk": "провідати родичів",
+    "example": "We visited relatives in Bila Tserkva.",
+    "lesson": "lesson-04",
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "word": "go for a walk",
+    "pos": "phrase",
+    "def": "to walk for pleasure",
+    "uk": "піти на прогулянку",
+    "example": "We went for a walk by the river.",
+    "lesson": "lesson-04",
+    "tags": [
+      "weekend"
+    ]
+  },
+  {
+    "word": "chat online",
+    "pos": "phrase",
+    "def": "to talk with people using messages on the internet",
+    "uk": "спілкуватися онлайн",
+    "example": "I chatted online with my cousin for an hour.",
+    "lesson": "lesson-04",
+    "tags": [
+      "free time"
+    ]
+  },
+  {
+    "word": "cook dinner",
+    "pos": "phrase",
+    "def": "to make the evening meal",
+    "uk": "готувати вечерю",
+    "example": "My dad cooked dinner on Saturday.",
+    "lesson": "lesson-04",
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "watch a film",
+    "pos": "phrase",
+    "def": "to look at a film on TV, online or at the cinema",
+    "uk": "дивитися фільм",
+    "example": "We watched a film at the cinema.",
+    "lesson": "lesson-04",
+    "tags": [
+      "free time"
+    ]
   }
 ]
