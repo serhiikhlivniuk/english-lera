@@ -171,5 +171,47 @@
       "What did you do last summer?"
     ],
     "teacher": "Слухай три речі: неправильні дієслова (goed, buyed), форму після didn't (didn't went) і чи не зісковзує в Present (Yesterday I go). Запиши 3–4 речення і в кінці попроси її саму виправити."
+  },
+  {
+    "id": "sp-05",
+    "lesson": "lesson-05",
+    "title": "What were you doing when…?",
+    "minutes": 8,
+    "level": "A2",
+    "goal": "Tell a short story about the past with a background (Past Continuous) and events (Past Simple).",
+    "grammar": [
+      "past-continuous",
+      "past-simple"
+    ],
+    "warmup": [
+      "What were you doing at 7 o'clock this morning?",
+      "What were you doing at 9 p.m. yesterday?",
+      "What did you do last weekend?"
+    ],
+    "main": {
+      "task": "Tell a story about a day when something unexpected happened.",
+      "howto": "One or two minutes. Start with the background: where you were, what you were doing, what the weather was like. Then the events: what happened, what you did. Use when and while.",
+      "prompts": [
+        "Where were you? What time was it?",
+        "What were you doing? What were other people doing?",
+        "What happened suddenly?",
+        "What did you do then?",
+        "How did it end?"
+      ]
+    },
+    "phrases": [
+      "It was a cold / rainy / sunny day.",
+      "I was … -ing when …",
+      "While I was … -ing, …",
+      "Suddenly…",
+      "Then I…",
+      "In the end…"
+    ],
+    "followup": [
+      "Were you scared?",
+      "What would you do differently?",
+      "Did you tell anybody about it?"
+    ],
+    "teacher": "Слухай: чи ставить was/were перед -ing; чи не плутає фон і подію (When the phone rang, I had a shower); неправильні дієслова (falled, runned). Запиши 3–4 речення, наприкінці хай вона сама скаже: це фон чи подія?"
   }
 ]

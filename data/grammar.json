@@ -1847,7 +1847,8 @@
     "level": "A1",
     "summary": "The past of am / is / are. Like the present, it needs no did.",
     "lessons": [
-      "lesson-04"
+      "lesson-04",
+      "lesson-05"
     ],
     "rules": [
       {
@@ -2038,7 +2039,8 @@
     "level": "A2",
     "summary": "Finished actions in the past: yesterday, last weekend, two days ago, in 2023.",
     "lessons": [
-      "lesson-04"
+      "lesson-04",
+      "lesson-05"
     ],
     "rules": [
       {
@@ -2234,6 +2236,221 @@
         ],
         "answer": 1,
         "why": "Did + subject + base form."
+      }
+    ]
+  },
+  {
+    "id": "past-continuous",
+    "group": "Tenses",
+    "title": "Past Continuous",
+    "uk": "was / were + -ing",
+    "level": "A2",
+    "summary": "An action that was in progress at a moment in the past — often interrupted by a short action in the Past Simple.",
+    "lessons": [
+      "lesson-05"
+    ],
+    "rules": [
+      {
+        "name": "Form",
+        "form": "I / he / she / it was + V-ing · you / we / they were + V-ing",
+        "when": "Both parts: was / were AND the -ing verb.",
+        "examples": [
+          {
+            "en": "At 8 p.m. I was doing my homework.",
+            "uk": "О 8-й вечора я робила домашку."
+          },
+          {
+            "en": "My parents were watching TV.",
+            "uk": "Батьки дивилися телевізор."
+          }
+        ]
+      },
+      {
+        "name": "Negatives and questions",
+        "form": "wasn't / weren't + V-ing  ·  Was / Were + subject + V-ing?",
+        "when": "No did here — was / were does the job.",
+        "examples": [
+          {
+            "en": "We weren't sleeping.",
+            "uk": "Ми не спали."
+          },
+          {
+            "en": "What were you doing at midnight?",
+            "uk": "Що ти робила опівночі?"
+          }
+        ]
+      },
+      {
+        "name": "Long action + short action",
+        "form": "while + Past Continuous · when + Past Simple",
+        "when": "The long action (background) is Continuous; the short action that interrupts it is Simple.",
+        "examples": [
+          {
+            "en": "I was having a shower when the phone rang.",
+            "uk": "Я була в душі, коли задзвонив телефон."
+          },
+          {
+            "en": "While we were walking home, it started to rain.",
+            "uk": "Поки ми йшли додому, почався дощ."
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "I was watch TV.",
+        "right": "I was watching TV.",
+        "note": "was + -ing"
+      },
+      {
+        "wrong": "When the phone rang, I had a shower.",
+        "right": "When the phone rang, I was having a shower.",
+        "note": "the long action → Continuous"
+      },
+      {
+        "wrong": "Did you sleeping?",
+        "right": "Were you sleeping?",
+        "note": "no did"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "At 9 p.m. yesterday we ___ a film.",
+        "options": [
+          "watched",
+          "were watching",
+          "was watching"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "I was reading when the lights ___ out.",
+        "options": [
+          "went",
+          "were going",
+          "go"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "What ___ you doing at midnight?",
+        "options": [
+          "did",
+          "was",
+          "were"
+        ],
+        "answer": 2
+      },
+      {
+        "q": "While she ___, she hurt her knee.",
+        "options": [
+          "ran",
+          "was running",
+          "were running"
+        ],
+        "answer": 1
+      }
+    ],
+    "practice": [
+      {
+        "q": "My dad ___ dinner at seven o'clock.",
+        "options": [
+          "was cooking",
+          "were cooking",
+          "cooking"
+        ],
+        "answer": 0,
+        "why": "A moment in the past + dad = he → was cooking."
+      },
+      {
+        "q": "They ___ football when it started to snow.",
+        "options": [
+          "played",
+          "were playing",
+          "was playing"
+        ],
+        "answer": 1,
+        "why": "The long action → Continuous; they → were."
+      },
+      {
+        "q": "I ___ my phone while I was running.",
+        "options": [
+          "lost",
+          "was losing",
+          "lose"
+        ],
+        "answer": 0,
+        "why": "Losing is short — it interrupts → Past Simple."
+      },
+      {
+        "q": "Sorry, I didn't hear you — I ___ to music.",
+        "options": [
+          "listened",
+          "was listening",
+          "am listening"
+        ],
+        "answer": 1,
+        "why": "It was in progress when you spoke → Continuous."
+      },
+      {
+        "q": "When the teacher came in, we ___.",
+        "options": [
+          "were talking",
+          "talked",
+          "talk"
+        ],
+        "answer": 0,
+        "why": "The talking had already started → were talking."
+      },
+      {
+        "q": "___ it raining when you left?",
+        "options": [
+          "Did",
+          "Was",
+          "Were"
+        ],
+        "answer": 1,
+        "why": "it → Was; no did with Continuous."
+      },
+      {
+        "q": "She ___ her leg when she was skiing.",
+        "options": [
+          "was breaking",
+          "broke",
+          "breaked"
+        ],
+        "answer": 1,
+        "why": "Short action → Past Simple; break → broke."
+      },
+      {
+        "q": "At midnight I ___ — I was reading.",
+        "options": [
+          "wasn't sleeping",
+          "didn't sleeping",
+          "not sleeping"
+        ],
+        "answer": 0,
+        "why": "Negative: wasn't + V-ing."
+      },
+      {
+        "q": "While we ___ the film, the lights went out.",
+        "options": [
+          "watched",
+          "were watching",
+          "was watching"
+        ],
+        "answer": 1,
+        "why": "while + the long action → were watching."
+      },
+      {
+        "q": "Choose the correct sentence.",
+        "options": [
+          "I was have a shower when you called.",
+          "I had a shower when you called.",
+          "I was having a shower when you called."
+        ],
+        "answer": 2,
+        "why": "Long action in progress → was having."
       }
     ]
   }

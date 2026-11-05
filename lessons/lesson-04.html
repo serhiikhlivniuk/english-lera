@@ -984,7 +984,7 @@
         x[0].querySelectorAll('input[type=radio]').forEach(function(r){ r.checked = r.value===x[1]; r.parentElement.classList.remove('ok','bad'); });
         try{ x[1]===null ? localStorage.removeItem(LS+'r:'+k) : localStorage.setItem(LS+'r:'+k, x[1]); }catch(_){} });
       try {
-        var K = 'lesson:lesson-04:answers', st = window.EW && EW.get(K, null);
+        var K = 'lesson:lesson-04:answers', st = typeof EW !== 'undefined' && EW.get(K, null);
         if (st && st.answers) {
           var a = Object.assign({}, st.answers);
           s.f.forEach(function(x){ if (x[1] === '') delete a[x[0].id]; else a[x[0].id] = x[1]; });

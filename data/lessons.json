@@ -80,5 +80,25 @@
       "NMT-style task"
     ],
     "vocabCount": 10
+  },
+  {
+    "id": "lesson-05",
+    "number": 5,
+    "title": "The Night of the Storm",
+    "titleUk": "Past Simple і Past Continuous",
+    "date": "2026-11-05",
+    "level": "A2",
+    "duration": "60 min",
+    "file": "lessons/lesson-05.html",
+    "summary": "What was happening and what happened: the Past Continuous (was / were + -ing) together with the Past Simple, when and while. A lightning-round warm-up, an interactive story with five endings, a speaking wheel and a new tab with 64 irregular verbs and a self-test.",
+    "topics": [
+      "Review: three tenses",
+      "Past Continuous",
+      "when / while",
+      "12 new irregular verbs",
+      "Interactive story",
+      "NMT-style task"
+    ],
+    "vocabCount": 8
   }
 ]

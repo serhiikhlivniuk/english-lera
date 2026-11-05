@@ -661,5 +661,93 @@
     "tags": [
       "free time"
     ]
+  },
+  {
+    "word": "suddenly",
+    "pos": "adverb",
+    "def": "very quickly, when you don't expect it",
+    "uk": "раптом",
+    "example": "Suddenly the lights went out.",
+    "lesson": "lesson-05",
+    "tags": [
+      "story"
+    ]
+  },
+  {
+    "word": "noise",
+    "pos": "noun",
+    "def": "a sound, often loud or not nice",
+    "uk": "шум, звук",
+    "example": "I heard a strange noise in the garden.",
+    "lesson": "lesson-05",
+    "tags": [
+      "story"
+    ]
+  },
+  {
+    "word": "scared",
+    "pos": "adjective",
+    "def": "afraid",
+    "uk": "наляканий",
+    "example": "My little sister was scared of the storm.",
+    "lesson": "lesson-05",
+    "tags": [
+      "feelings"
+    ]
+  },
+  {
+    "word": "torch",
+    "pos": "noun",
+    "def": "a small electric lamp you hold in your hand",
+    "uk": "ліхтарик",
+    "example": "I found a torch in the kitchen drawer.",
+    "lesson": "lesson-05",
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "lightning",
+    "pos": "noun",
+    "def": "the bright flash of light in the sky in a storm",
+    "uk": "блискавка",
+    "example": "Lightning lit up the whole street.",
+    "lesson": "lesson-05",
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "word": "thunder",
+    "pos": "noun",
+    "def": "the loud noise in the sky after lightning",
+    "uk": "грім",
+    "example": "The thunder was so loud that the dog hid.",
+    "lesson": "lesson-05",
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "word": "hide",
+    "pos": "verb (hid)",
+    "def": "to go where nobody can see you",
+    "uk": "ховатися",
+    "example": "The cat was hiding under the bed.",
+    "lesson": "lesson-05",
+    "tags": [
+      "story"
+    ]
+  },
+  {
+    "word": "shake",
+    "pos": "verb (shook)",
+    "def": "to move quickly up and down or from side to side, e.g. from cold or fear",
+    "uk": "тремтіти",
+    "example": "The little dog was shaking with cold.",
+    "lesson": "lesson-05",
+    "tags": [
+      "feelings"
+    ]
   }
 ]
