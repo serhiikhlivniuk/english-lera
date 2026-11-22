@@ -2453,5 +2453,441 @@
         "why": "Long action in progress → was having."
       }
     ]
+  },
+  {
+    "id": "comparatives",
+    "group": "Adjectives",
+    "title": "Comparatives: taller, more interesting",
+    "uk": "вищий, цікавіший",
+    "level": "A2",
+    "summary": "Compare two things: adjective + -er, or more + adjective, and then than.",
+    "lessons": [
+      "lesson-06"
+    ],
+    "rules": [
+      {
+        "name": "Short adjectives",
+        "form": "adjective + -er + than",
+        "when": "One syllable, and two syllables ending in -y (y → i).",
+        "examples": [
+          {
+            "en": "My brother is taller than me.",
+            "uk": "Мій брат вищий за мене."
+          },
+          {
+            "en": "English is easier than maths.",
+            "uk": "Англійська легша за математику."
+          }
+        ]
+      },
+      {
+        "name": "Long adjectives",
+        "form": "more + adjective + than",
+        "when": "Two or more syllables (not ending in -y).",
+        "examples": [
+          {
+            "en": "This film is more interesting than the book.",
+            "uk": "Цей фільм цікавіший за книжку."
+          }
+        ]
+      },
+      {
+        "name": "Irregular",
+        "form": "good → better · bad → worse · far → further",
+        "when": "Learn them by heart.",
+        "examples": [
+          {
+            "en": "My English is better than last year.",
+            "uk": "Моя англійська краща, ніж торік."
+          }
+        ]
+      },
+      {
+        "name": "as … as",
+        "form": "as + adjective + as · not as + adjective + as",
+        "when": "The same — or not the same.",
+        "examples": [
+          {
+            "en": "My room is as big as yours.",
+            "uk": "Моя кімната така ж велика, як твоя."
+          },
+          {
+            "en": "The bus isn't as fast as the train.",
+            "uk": "Автобус не такий швидкий, як потяг."
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "more taller",
+        "right": "taller",
+        "note": "-er OR more, never both"
+      },
+      {
+        "wrong": "more easy",
+        "right": "easier",
+        "note": "-y → -ier"
+      },
+      {
+        "wrong": "bigger then",
+        "right": "bigger than",
+        "note": "than, not then"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "My sister is ___ than me.",
+        "options": [
+          "older",
+          "more old",
+          "oldest"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "This book is ___ than that one.",
+        "options": [
+          "interestinger",
+          "more interesting",
+          "most interesting"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "The weather today is ___ than yesterday.",
+        "options": [
+          "badder",
+          "worse",
+          "worst"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "My phone is as good ___ yours.",
+        "options": [
+          "than",
+          "as",
+          "like"
+        ],
+        "answer": 1
+      }
+    ],
+    "practice": [
+      {
+        "q": "Kyiv is ___ than Poltava.",
+        "options": [
+          "big",
+          "biger",
+          "bigger"
+        ],
+        "answer": 2,
+        "why": "Short vowel + consonant → double: bigger."
+      },
+      {
+        "q": "Today is ___ than yesterday.",
+        "options": [
+          "hotter",
+          "hoter",
+          "more hot"
+        ],
+        "answer": 0,
+        "why": "hot → hotter (double t)."
+      },
+      {
+        "q": "Maths is ___ than history for me.",
+        "options": [
+          "difficulter",
+          "more difficult",
+          "most difficult"
+        ],
+        "answer": 1,
+        "why": "Long adjective → more difficult."
+      },
+      {
+        "q": "This test was ___ than the last one.",
+        "options": [
+          "easier",
+          "easyer",
+          "more easy"
+        ],
+        "answer": 0,
+        "why": "-y → -ier: easier."
+      },
+      {
+        "q": "My English is ___ now.",
+        "options": [
+          "gooder",
+          "better",
+          "more good"
+        ],
+        "answer": 1,
+        "why": "good → better (irregular)."
+      },
+      {
+        "q": "Her cold is ___ today.",
+        "options": [
+          "worse",
+          "badder",
+          "worst"
+        ],
+        "answer": 0,
+        "why": "bad → worse (irregular)."
+      },
+      {
+        "q": "Lviv is ___ from here than Zhytomyr.",
+        "options": [
+          "farer",
+          "further",
+          "more far"
+        ],
+        "answer": 1,
+        "why": "far → further / farther."
+      },
+      {
+        "q": "My room is as big ___ yours.",
+        "options": [
+          "than",
+          "as",
+          "that"
+        ],
+        "answer": 1,
+        "why": "as + adjective + as."
+      },
+      {
+        "q": "The bus isn't ___ fast as the train.",
+        "options": [
+          "so",
+          "as",
+          "more"
+        ],
+        "answer": 1,
+        "why": "not as + adjective + as."
+      },
+      {
+        "q": "Choose the correct sentence.",
+        "options": [
+          "He is more taller than me.",
+          "He is taller than me.",
+          "He is taller then me."
+        ],
+        "answer": 1,
+        "why": "-er + than; never more + -er."
+      }
+    ]
+  },
+  {
+    "id": "superlatives",
+    "group": "Adjectives",
+    "title": "Superlatives: the tallest, the most interesting",
+    "uk": "найвищий, найцікавіший",
+    "level": "A2",
+    "summary": "The number one in a group: the + adjective + -est, or the most + adjective.",
+    "lessons": [
+      "lesson-06"
+    ],
+    "rules": [
+      {
+        "name": "Short adjectives",
+        "form": "the + adjective + -est",
+        "when": "The same spelling rules as -er: big → the biggest, happy → the happiest.",
+        "examples": [
+          {
+            "en": "Kyiv is the biggest city in Ukraine.",
+            "uk": "Київ — найбільше місто України."
+          }
+        ]
+      },
+      {
+        "name": "Long adjectives",
+        "form": "the most + adjective",
+        "when": "Two or more syllables (not ending in -y).",
+        "examples": [
+          {
+            "en": "Lviv is one of the most beautiful cities in Ukraine.",
+            "uk": "Львів — одне з найкрасивіших міст України."
+          }
+        ]
+      },
+      {
+        "name": "Irregular",
+        "form": "good → the best · bad → the worst · far → the furthest",
+        "when": "Learn them by heart.",
+        "examples": [
+          {
+            "en": "It was the best day of my life.",
+            "uk": "Це був найкращий день у моєму житті."
+          }
+        ]
+      },
+      {
+        "name": "in / of",
+        "form": "the … in + a place / a group · the … of + a number or time",
+        "when": "the tallest in the class · the best of the three · the coldest day of the year",
+        "examples": [
+          {
+            "en": "She is the youngest in our family.",
+            "uk": "Вона наймолодша в нашій родині."
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "the most biggest",
+        "right": "the biggest",
+        "note": "-est OR most, never both"
+      },
+      {
+        "wrong": "She is best student.",
+        "right": "She is the best student.",
+        "note": "don't forget the"
+      },
+      {
+        "wrong": "the tallest of the class",
+        "right": "the tallest in the class",
+        "note": "in + a group / place"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "Kyiv is ___ city in Ukraine.",
+        "options": [
+          "the biggest",
+          "the most big",
+          "bigger"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "It was ___ day of the year.",
+        "options": [
+          "the hotest",
+          "the hottest",
+          "the most hot"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "This is ___ café in our town.",
+        "options": [
+          "the best",
+          "the better",
+          "the goodest"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "She is the youngest ___ our family.",
+        "options": [
+          "of",
+          "in",
+          "from"
+        ],
+        "answer": 1
+      }
+    ],
+    "practice": [
+      {
+        "q": "Hoverla is ___ mountain in Ukraine.",
+        "options": [
+          "the highest",
+          "the higher",
+          "the most high"
+        ],
+        "answer": 0,
+        "why": "high → the highest."
+      },
+      {
+        "q": "This is ___ film I know.",
+        "options": [
+          "the funnyest",
+          "the funniest",
+          "the most funny"
+        ],
+        "answer": 1,
+        "why": "-y → -iest: the funniest."
+      },
+      {
+        "q": "Lviv is one of ___ cities in Ukraine.",
+        "options": [
+          "the most beautiful",
+          "the beautifulest",
+          "more beautiful"
+        ],
+        "answer": 0,
+        "why": "Long adjective → the most beautiful."
+      },
+      {
+        "q": "Yesterday was ___ day of my week.",
+        "options": [
+          "the worse",
+          "the worst",
+          "the baddest"
+        ],
+        "answer": 1,
+        "why": "bad → the worst."
+      },
+      {
+        "q": "Who is ___ person in your family?",
+        "options": [
+          "the oldest",
+          "the older",
+          "oldest"
+        ],
+        "answer": 0,
+        "why": "the + -est for number one in a group."
+      },
+      {
+        "q": "December is ___ month of the year for me.",
+        "options": [
+          "the busiest",
+          "the busyest",
+          "the most busy"
+        ],
+        "answer": 0,
+        "why": "busy → the busiest."
+      },
+      {
+        "q": "The Pacific is ___ ocean in the world.",
+        "options": [
+          "the biggest",
+          "the bigest",
+          "the most big"
+        ],
+        "answer": 0,
+        "why": "big → the biggest (double g)."
+      },
+      {
+        "q": "She is the best student ___ our class.",
+        "options": [
+          "of",
+          "in",
+          "at"
+        ],
+        "answer": 1,
+        "why": "in + a group: in our class."
+      },
+      {
+        "q": "This is the most expensive phone ___ the three.",
+        "options": [
+          "in",
+          "of",
+          "from"
+        ],
+        "answer": 1,
+        "why": "of + a number: of the three."
+      },
+      {
+        "q": "Choose the correct sentence.",
+        "options": [
+          "It's the most biggest room.",
+          "It's biggest room.",
+          "It's the biggest room."
+        ],
+        "answer": 2,
+        "why": "the + -est; never most + -est."
+      }
+    ]
   }
 ]

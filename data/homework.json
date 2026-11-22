@@ -1,5 +1,35 @@
 [
   {
+    "id": "hw-06",
+    "lesson": "lesson-06",
+    "title": "Homework after Lesson 6",
+    "assigned": "2026-11-22",
+    "due": "2026-11-29",
+    "note": "Try every task without «Show answers» first. Lesson 5 still has three empty exercises — let's finish them this week.",
+    "items": [
+      {
+        "id": "hw-06-1",
+        "text": "Exercise 12: write 80–100 words «Two places I know» — on the lesson page.",
+        "type": "writing"
+      },
+      {
+        "id": "hw-06-2",
+        "text": "Grammar section: take the quizzes «Comparatives» and «Superlatives».",
+        "type": "grammar"
+      },
+      {
+        "id": "hw-06-3",
+        "text": "Lesson 5: do Exercises 6, 8 and 9 and find at least three endings of the story.",
+        "type": "grammar"
+      },
+      {
+        "id": "hw-06-4",
+        "text": "Learn the 10 words for describing places (Exercise 2) and do «Test me → Lessons 4–5» in the Irregular verbs tab until 11 / 12.",
+        "type": "vocab"
+      }
+    ]
+  },
+  {
     "id": "hw-05",
     "lesson": "lesson-05",
     "title": "Homework after Lesson 5",

@@ -100,5 +100,25 @@
       "NMT-style task"
     ],
     "vocabCount": 8
+  },
+  {
+    "id": "lesson-06",
+    "number": 6,
+    "title": "The Best and the Worst",
+    "titleUk": "Порівняння: comparatives і superlatives",
+    "date": "2026-11-22",
+    "level": "A2",
+    "duration": "60 min",
+    "file": "lessons/lesson-06.html",
+    "summary": "A warm-up on all four tenses, then a new topic: comparing things — bigger, more interesting, the best, as … as. A facts game, a sorting game with three baskets, a table of three cafés to read, an NMT task and a «This or that?» wheel.",
+    "topics": [
+      "Review: four tenses",
+      "Comparatives",
+      "Superlatives",
+      "as … as",
+      "Describing places",
+      "NMT-style task"
+    ],
+    "vocabCount": 10
   }
 ]

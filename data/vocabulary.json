@@ -749,5 +749,115 @@
     "tags": [
       "feelings"
     ]
+  },
+  {
+    "word": "crowded",
+    "pos": "adjective",
+    "def": "full of people",
+    "uk": "переповнений, людний",
+    "example": "The metro is very crowded in the morning.",
+    "lesson": "lesson-06",
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "empty",
+    "pos": "adjective",
+    "def": "with nobody or nothing inside",
+    "uk": "порожній",
+    "example": "The streets were empty at 6 a.m.",
+    "lesson": "lesson-06",
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "quiet",
+    "pos": "adjective",
+    "def": "with very little noise",
+    "uk": "тихий",
+    "example": "My village is much quieter than Kyiv.",
+    "lesson": "lesson-06",
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "noisy",
+    "pos": "adjective",
+    "def": "with a lot of noise",
+    "uk": "шумний",
+    "example": "Our street is the noisiest in town.",
+    "lesson": "lesson-06",
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "modern",
+    "pos": "adjective",
+    "def": "new, made with new ideas or technology",
+    "uk": "сучасний",
+    "example": "Bulka is the most modern café near school.",
+    "lesson": "lesson-06",
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "old-fashioned",
+    "pos": "adjective",
+    "def": "not modern, from the past",
+    "uk": "старомодний",
+    "example": "My grandma's kitchen is a bit old-fashioned.",
+    "lesson": "lesson-06",
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "safe",
+    "pos": "adjective",
+    "def": "not dangerous",
+    "uk": "безпечний",
+    "example": "Is it safe to walk here at night?",
+    "lesson": "lesson-06",
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "dangerous",
+    "pos": "adjective",
+    "def": "can hurt you",
+    "uk": "небезпечний",
+    "example": "This road is the most dangerous in our area.",
+    "lesson": "lesson-06",
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "comfortable",
+    "pos": "adjective",
+    "def": "nice to sit in, wear or be in",
+    "uk": "зручний",
+    "example": "The new chairs are more comfortable.",
+    "lesson": "lesson-06",
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "polluted",
+    "pos": "adjective",
+    "def": "dirty because of smoke, rubbish or chemicals",
+    "uk": "забруднений",
+    "example": "The air in big cities is more polluted.",
+    "lesson": "lesson-06",
+    "tags": [
+      "places"
+    ]
   }
 ]

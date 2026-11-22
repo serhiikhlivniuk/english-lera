@@ -213,5 +213,46 @@
       "Did you tell anybody about it?"
     ],
     "teacher": "Слухай: чи ставить was/were перед -ing; чи не плутає фон і подію (When the phone rang, I had a shower); неправильні дієслова (falled, runned). Запиши 3–4 речення, наприкінці хай вона сама скаже: це фон чи подія?"
+  },
+  {
+    "id": "sp-06",
+    "lesson": "lesson-06",
+    "title": "This or that?",
+    "minutes": 8,
+    "level": "A2",
+    "goal": "Compare places, things and people and give reasons, using comparatives, superlatives and as … as.",
+    "grammar": [
+      "comparatives",
+      "superlatives"
+    ],
+    "warmup": [
+      "Which is better: summer or winter?",
+      "Who is the oldest person in your family?",
+      "Is your village quieter than Kyiv?"
+    ],
+    "main": {
+      "task": "Compare your village or town with Kyiv.",
+      "howto": "One or two minutes. At least four comparatives, two superlatives and one as … as. Say what you like more and why.",
+      "prompts": [
+        "Which is quieter / safer / cheaper?",
+        "Where are the shops and cafés better?",
+        "What is the best place in your village?",
+        "What is the most crowded place in Kyiv?",
+        "Where would you like to live in ten years? Why?"
+      ]
+    },
+    "phrases": [
+      "… is much bigger than …",
+      "… isn't as … as …",
+      "The best thing about … is …",
+      "… is the most … place I know.",
+      "I prefer … because it's …"
+    ],
+    "followup": [
+      "Which city in Ukraine is the most beautiful for you?",
+      "Was your village different when you were a child?",
+      "Which is more important: a cheap flat or a short way to work?"
+    ],
+    "teacher": "Слухай: more + -er (more bigger), відсутність the в superlative, than / then, bad → badder. Запиши 3–4 речення і в кінці попроси її саму знайти помилку."
   }
 ]
